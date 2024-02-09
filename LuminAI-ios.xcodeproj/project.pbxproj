@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2474C7F2B761B280025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C7E2B761B280025B82D /* .gitkeep */; };
+		C2474C812B761B3C0025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C802B761B3C0025B82D /* .gitkeep */; };
+		C2474C842B761B4D0025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C832B761B4D0025B82D /* .gitkeep */; };
+		C2474C862B761B550025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C852B761B550025B82D /* .gitkeep */; };
+		C2474C882B761B5E0025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C872B761B5E0025B82D /* .gitkeep */; };
+		C2474C8A2B761B660025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C892B761B660025B82D /* .gitkeep */; };
+		C2474C8C2B761B6F0025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C8B2B761B6F0025B82D /* .gitkeep */; };
+		C2474C8E2B761B770025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C8D2B761B770025B82D /* .gitkeep */; };
+		C2474C902B761B800025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C8F2B761B800025B82D /* .gitkeep */; };
 		C254C9CA2B751AA100F5B244 /* LuminAI_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254C9C92B751AA100F5B244 /* LuminAI_iosApp.swift */; };
 		C254C9CC2B751AA100F5B244 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254C9CB2B751AA100F5B244 /* ContentView.swift */; };
 		C254C9CE2B751AA400F5B244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C254C9CD2B751AA400F5B244 /* Assets.xcassets */; };
@@ -14,6 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C2474C7E2B761B280025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		C2474C802B761B3C0025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		C2474C832B761B4D0025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		C2474C852B761B550025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		C2474C872B761B5E0025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		C2474C892B761B660025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		C2474C8B2B761B6F0025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		C2474C8D2B761B770025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		C2474C8F2B761B800025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		C254C9C62B751AA100F5B244 /* LuminAI-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LuminAI-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C254C9C92B751AA100F5B244 /* LuminAI_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminAI_iosApp.swift; sourceTree = "<group>"; };
 		C254C9CB2B751AA100F5B244 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +50,124 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2474C632B760D560025B82D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C2474C8F2B761B800025B82D /* .gitkeep */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C2474C642B760DD40025B82D /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				C2474C7A2B7619370025B82D /* Sensor */,
+				C2474C752B760FE40025B82D /* Home */,
+				C2474C652B760DDB0025B82D /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C2474C652B760DDB0025B82D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C2474C722B760E810025B82D /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C2474C722B760E810025B82D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2474C8D2B761B770025B82D /* .gitkeep */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2474C732B760EB30025B82D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C2474C742B760EBA0025B82D /* Views */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C2474C742B760EBA0025B82D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2474C7E2B761B280025B82D /* .gitkeep */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2474C752B760FE40025B82D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C2474C792B7610540025B82D /* ViewModels */,
+				C2474C782B7610470025B82D /* Model */,
+				C2474C762B7610240025B82D /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C2474C762B7610240025B82D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2474C8B2B761B6F0025B82D /* .gitkeep */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2474C782B7610470025B82D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2474C892B761B660025B82D /* .gitkeep */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2474C792B7610540025B82D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C2474C872B761B5E0025B82D /* .gitkeep */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C2474C7A2B7619370025B82D /* Sensor */ = {
+			isa = PBXGroup;
+			children = (
+				C2474C7D2B76194C0025B82D /* ViewModel */,
+				C2474C7C2B7619470025B82D /* Model */,
+				C2474C7B2B76193D0025B82D /* Views */,
+			);
+			path = Sensor;
+			sourceTree = "<group>";
+		};
+		C2474C7B2B76193D0025B82D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2474C852B761B550025B82D /* .gitkeep */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2474C7C2B7619470025B82D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2474C832B761B4D0025B82D /* .gitkeep */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2474C7D2B76194C0025B82D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C2474C802B761B3C0025B82D /* .gitkeep */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C254C9BD2B751AA100F5B244 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +187,9 @@
 		C254C9C82B751AA100F5B244 /* LuminAI-ios */ = {
 			isa = PBXGroup;
 			children = (
+				C2474C732B760EB30025B82D /* Base */,
+				C2474C642B760DD40025B82D /* Features */,
+				C2474C632B760D560025B82D /* Resources */,
 				C254C9C92B751AA100F5B244 /* LuminAI_iosApp.swift */,
 				C254C9CB2B751AA100F5B244 /* ContentView.swift */,
 				C254C9CD2B751AA400F5B244 /* Assets.xcassets */,
@@ -125,8 +264,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2474C7F2B761B280025B82D /* .gitkeep in Resources */,
 				C254C9D12B751AA400F5B244 /* Preview Assets.xcassets in Resources */,
+				C2474C902B761B800025B82D /* .gitkeep in Resources */,
+				C2474C842B761B4D0025B82D /* .gitkeep in Resources */,
+				C2474C8C2B761B6F0025B82D /* .gitkeep in Resources */,
+				C2474C862B761B550025B82D /* .gitkeep in Resources */,
 				C254C9CE2B751AA400F5B244 /* Assets.xcassets in Resources */,
+				C2474C812B761B3C0025B82D /* .gitkeep in Resources */,
+				C2474C8E2B761B770025B82D /* .gitkeep in Resources */,
+				C2474C882B761B5E0025B82D /* .gitkeep in Resources */,
+				C2474C8A2B761B660025B82D /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
