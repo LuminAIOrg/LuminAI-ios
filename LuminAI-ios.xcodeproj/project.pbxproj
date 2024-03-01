@@ -7,34 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2474C7F2B761B280025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C7E2B761B280025B82D /* .gitkeep */; };
-		C2474C812B761B3C0025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C802B761B3C0025B82D /* .gitkeep */; };
-		C2474C842B761B4D0025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C832B761B4D0025B82D /* .gitkeep */; };
-		C2474C862B761B550025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C852B761B550025B82D /* .gitkeep */; };
-		C2474C882B761B5E0025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C872B761B5E0025B82D /* .gitkeep */; };
-		C2474C8A2B761B660025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C892B761B660025B82D /* .gitkeep */; };
-		C2474C8C2B761B6F0025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C8B2B761B6F0025B82D /* .gitkeep */; };
-		C2474C8E2B761B770025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C8D2B761B770025B82D /* .gitkeep */; };
-		C2474C902B761B800025B82D /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C2474C8F2B761B800025B82D /* .gitkeep */; };
+		C243013C2B91BB6700C8A188 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243013B2B91BB6700C8A188 /* HomeView.swift */; };
+		C243013E2B91BC6700C8A188 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243013D2B91BC6700C8A188 /* Theme.swift */; };
+		C24301452B91CBD600C8A188 /* PageDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24301442B91CBD600C8A188 /* PageDataResponse.swift */; };
+		C24301482B91CC7B00C8A188 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24301472B91CC7B00C8A188 /* Models.swift */; };
+		C243014A2B91CCD600C8A188 /* StaticJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24301492B91CCD600C8A188 /* StaticJSONMapper.swift */; };
+		C243014D2B91D3AA00C8A188 /* PageDataStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = C243014C2B91D3AA00C8A188 /* PageDataStatic.json */; };
+		C243014F2B91D54B00C8A188 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243014E2B91D54B00C8A188 /* Symbols.swift */; };
+		C243015B2B91D8DB00C8A188 /* SensorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243015A2B91D8DB00C8A188 /* SensorCard.swift */; };
+		C243015F2B91D9BE00C8A188 /* LatestUseStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = C243015E2B91D9BE00C8A188 /* LatestUseStatic.json */; };
+		C24301632B91DC6C00C8A188 /* LatestUseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24301622B91DC6C00C8A188 /* LatestUseResponse.swift */; };
 		C254C9CA2B751AA100F5B244 /* LuminAI_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254C9C92B751AA100F5B244 /* LuminAI_iosApp.swift */; };
-		C254C9CC2B751AA100F5B244 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254C9CB2B751AA100F5B244 /* ContentView.swift */; };
 		C254C9CE2B751AA400F5B244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C254C9CD2B751AA400F5B244 /* Assets.xcassets */; };
 		C254C9D12B751AA400F5B244 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C254C9D02B751AA400F5B244 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C2474C7E2B761B280025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		C2474C802B761B3C0025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		C2474C832B761B4D0025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		C2474C852B761B550025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		C2474C872B761B5E0025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		C2474C892B761B660025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		C2474C8B2B761B6F0025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		C2474C8D2B761B770025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		C2474C8F2B761B800025B82D /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		C243013B2B91BB6700C8A188 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C243013D2B91BC6700C8A188 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		C243013F2B91C1F400C8A188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C24301442B91CBD600C8A188 /* PageDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDataResponse.swift; sourceTree = "<group>"; };
+		C24301472B91CC7B00C8A188 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		C24301492B91CCD600C8A188 /* StaticJSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticJSONMapper.swift; sourceTree = "<group>"; };
+		C243014C2B91D3AA00C8A188 /* PageDataStatic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PageDataStatic.json; sourceTree = "<group>"; };
+		C243014E2B91D54B00C8A188 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
+		C243015A2B91D8DB00C8A188 /* SensorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorCard.swift; sourceTree = "<group>"; };
+		C243015E2B91D9BE00C8A188 /* LatestUseStatic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LatestUseStatic.json; sourceTree = "<group>"; };
+		C24301622B91DC6C00C8A188 /* LatestUseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestUseResponse.swift; sourceTree = "<group>"; };
 		C254C9C62B751AA100F5B244 /* LuminAI-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LuminAI-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C254C9C92B751AA100F5B244 /* LuminAI_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminAI_iosApp.swift; sourceTree = "<group>"; };
-		C254C9CB2B751AA100F5B244 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C254C9CD2B751AA400F5B244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C254C9D02B751AA400F5B244 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,10 +51,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C24301412B91C91200C8A188 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				C243014C2B91D3AA00C8A188 /* PageDataStatic.json */,
+				C243015E2B91D9BE00C8A188 /* LatestUseStatic.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		C24301462B91CC6B00C8A188 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C24301472B91CC7B00C8A188 /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C243014B2B91CCDA00C8A188 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				C24301492B91CCD600C8A188 /* StaticJSONMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		C24301502B91D81100C8A188 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				C24301532B91D82800C8A188 /* Views */,
+				C24301522B91D82300C8A188 /* Model */,
+				C24301512B91D81C00C8A188 /* ViewModel */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		C24301512B91D81C00C8A188 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C24301522B91D82300C8A188 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C24301532B91D82800C8A188 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C2474C632B760D560025B82D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C2474C8F2B761B800025B82D /* .gitkeep */,
+				C24301412B91C91200C8A188 /* JSON */,
+				C243013D2B91BC6700C8A188 /* Theme.swift */,
+				C243014E2B91D54B00C8A188 /* Symbols.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -61,6 +120,7 @@
 		C2474C642B760DD40025B82D /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				C24301502B91D81100C8A188 /* Calendar */,
 				C2474C7A2B7619370025B82D /* Sensor */,
 				C2474C752B760FE40025B82D /* Home */,
 				C2474C652B760DDB0025B82D /* Settings */,
@@ -79,7 +139,6 @@
 		C2474C722B760E810025B82D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C2474C8D2B761B770025B82D /* .gitkeep */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -87,6 +146,8 @@
 		C2474C732B760EB30025B82D /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				C243014B2B91CCDA00C8A188 /* Mapper */,
+				C24301462B91CC6B00C8A188 /* Model */,
 				C2474C742B760EBA0025B82D /* Views */,
 			);
 			path = Base;
@@ -95,7 +156,7 @@
 		C2474C742B760EBA0025B82D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C2474C7E2B761B280025B82D /* .gitkeep */,
+				C243015A2B91D8DB00C8A188 /* SensorCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,7 +174,7 @@
 		C2474C762B7610240025B82D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C2474C8B2B761B6F0025B82D /* .gitkeep */,
+				C243013B2B91BB6700C8A188 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,7 +182,8 @@
 		C2474C782B7610470025B82D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C2474C892B761B660025B82D /* .gitkeep */,
+				C24301442B91CBD600C8A188 /* PageDataResponse.swift */,
+				C24301622B91DC6C00C8A188 /* LatestUseResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,7 +191,6 @@
 		C2474C792B7610540025B82D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				C2474C872B761B5E0025B82D /* .gitkeep */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -147,7 +208,6 @@
 		C2474C7B2B76193D0025B82D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C2474C852B761B550025B82D /* .gitkeep */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,7 +215,6 @@
 		C2474C7C2B7619470025B82D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C2474C832B761B4D0025B82D /* .gitkeep */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,7 +222,6 @@
 		C2474C7D2B76194C0025B82D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C2474C802B761B3C0025B82D /* .gitkeep */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -187,11 +245,11 @@
 		C254C9C82B751AA100F5B244 /* LuminAI-ios */ = {
 			isa = PBXGroup;
 			children = (
+				C243013F2B91C1F400C8A188 /* Info.plist */,
 				C2474C732B760EB30025B82D /* Base */,
 				C2474C642B760DD40025B82D /* Features */,
 				C2474C632B760D560025B82D /* Resources */,
 				C254C9C92B751AA100F5B244 /* LuminAI_iosApp.swift */,
-				C254C9CB2B751AA100F5B244 /* ContentView.swift */,
 				C254C9CD2B751AA400F5B244 /* Assets.xcassets */,
 				C254C9CF2B751AA400F5B244 /* Preview Content */,
 			);
@@ -264,17 +322,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2474C7F2B761B280025B82D /* .gitkeep in Resources */,
 				C254C9D12B751AA400F5B244 /* Preview Assets.xcassets in Resources */,
-				C2474C902B761B800025B82D /* .gitkeep in Resources */,
-				C2474C842B761B4D0025B82D /* .gitkeep in Resources */,
-				C2474C8C2B761B6F0025B82D /* .gitkeep in Resources */,
-				C2474C862B761B550025B82D /* .gitkeep in Resources */,
+				C243014D2B91D3AA00C8A188 /* PageDataStatic.json in Resources */,
+				C243015F2B91D9BE00C8A188 /* LatestUseStatic.json in Resources */,
 				C254C9CE2B751AA400F5B244 /* Assets.xcassets in Resources */,
-				C2474C812B761B3C0025B82D /* .gitkeep in Resources */,
-				C2474C8E2B761B770025B82D /* .gitkeep in Resources */,
-				C2474C882B761B5E0025B82D /* .gitkeep in Resources */,
-				C2474C8A2B761B660025B82D /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,8 +336,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C254C9CC2B751AA100F5B244 /* ContentView.swift in Sources */,
+				C243013C2B91BB6700C8A188 /* HomeView.swift in Sources */,
+				C243013E2B91BC6700C8A188 /* Theme.swift in Sources */,
+				C24301482B91CC7B00C8A188 /* Models.swift in Sources */,
 				C254C9CA2B751AA100F5B244 /* LuminAI_iosApp.swift in Sources */,
+				C243014A2B91CCD600C8A188 /* StaticJSONMapper.swift in Sources */,
+				C24301632B91DC6C00C8A188 /* LatestUseResponse.swift in Sources */,
+				C24301452B91CBD600C8A188 /* PageDataResponse.swift in Sources */,
+				C243014F2B91D54B00C8A188 /* Symbols.swift in Sources */,
+				C243015B2B91D8DB00C8A188 /* SensorCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,9 +481,9 @@
 				DEVELOPMENT_TEAM = VT932PL78W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LuminAI-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,9 +510,9 @@
 				DEVELOPMENT_TEAM = VT932PL78W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "LuminAI-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

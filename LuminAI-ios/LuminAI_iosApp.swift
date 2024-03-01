@@ -11,7 +11,13 @@ import SwiftUI
 struct LuminAI_iosApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                HomeView()
+                    .tabItem {
+                        Symbols.homePageIcon
+                        Text("Home")
+                    }
+            }
         }
     }
 }

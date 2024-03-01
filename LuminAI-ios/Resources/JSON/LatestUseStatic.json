@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "neopixel",
+    "unit": "null",
+    "data": [
+      {
+        "timestamp": 1707390664,
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "temperature",
+    "unit": null,
+    "data": [
+      {
+        "timestamp": 1707392233,
+        "value": 23.29
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "noise",
+    "unit": null,
+    "data": [
+      {
+        "timestamp": 1707392649,
+        "value": 331
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "pressure",
+    "unit": null,
+    "data": [
+      {
+        "timestamp": 1707392338,
+        "value": 971.69
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "humidity",
+    "unit": null,
+    "data": [
+      {
+        "timestamp": 1707392647,
+        "value": 44.68
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "MockedSensor",
+    "unit": null,
+    "data": [
+      {
+        "timestamp": 1709282088398,
+        "value": 80.8461315807244
+      },
+      {
+        "timestamp": 1709224003279,
+        "value": 208.3024231649394
+      },
+      {
+        "timestamp": 1709223983264,
+        "value": 58.30890398523479
+      },
+      {
+        "timestamp": 1709223963248,
+        "value": 69.558872501461
+      },
+      {
+        "timestamp": 1709223943205,
+        "value": 244.03386397116998
+      },
+      {
+        "timestamp": 1709223923193,
+        "value": 98.34912111952671
+      },
+      {
+        "timestamp": 1709223903185,
+        "value": 200.57363841980455
+      },
+      {
+        "timestamp": 1709223883151,
+        "value": 293.99299918957234
+      },
+      {
+        "timestamp": 1709223862813,
+        "value": 107.5861291079618
+      },
+      {
+        "timestamp": 1709223809470,
+        "value": 291.2588608863608
+      },
+      {
+        "timestamp": 1709223789452,
+        "value": 269.10457931145123
+      },
+      {
+        "timestamp": 1709223769410,
+        "value": 188.03989018688117
+      },
+      {
+        "timestamp": 1709223749063,
+        "value": 205.25760960896227
+      },
+      {
+        "timestamp": 1709223698149,
+        "value": 123.27442128866754
+      },
+      {
+        "timestamp": 1709223678135,
+        "value": 116.8919293643896
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "co2",
+    "unit": null,
+    "data": [
+      {
+        "timestamp": 1707392647,
+        "value": 736.17
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "motion",
+    "unit": null,
+    "data": [
+      {
+        "timestamp": 1707392361,
+        "value": 0
+      }
+    ]
+  }
+]
