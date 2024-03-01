@@ -18,7 +18,14 @@ struct HomeView: View {
                     .ignoresSafeArea(edges: .top)
                 // TODO: Chart Overview
                 
-                // TODO: Latest Use
+                ScrollView(.horizontal) {
+                    HStack(spacing: 16) {
+                        ForEach(0...5, id: \.self) { item in
+                            SensorCardView(sensorName: "Sensor \(item)", sensorRoom: "Room for sensor \(item)", sensorColor: generateRandomPastelColor())
+                        }
+                    }.padding()
+                }
+                Spacer()
                 
                 // TODO: Most Happening
             }

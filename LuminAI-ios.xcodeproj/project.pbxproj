@@ -14,7 +14,7 @@
 		C243014A2B91CCD600C8A188 /* StaticJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24301492B91CCD600C8A188 /* StaticJSONMapper.swift */; };
 		C243014D2B91D3AA00C8A188 /* PageDataStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = C243014C2B91D3AA00C8A188 /* PageDataStatic.json */; };
 		C243014F2B91D54B00C8A188 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243014E2B91D54B00C8A188 /* Symbols.swift */; };
-		C243015B2B91D8DB00C8A188 /* SensorCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243015A2B91D8DB00C8A188 /* SensorCard.swift */; };
+		C243015B2B91D8DB00C8A188 /* SensorCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243015A2B91D8DB00C8A188 /* SensorCardView.swift */; };
 		C243015F2B91D9BE00C8A188 /* LatestUseStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = C243015E2B91D9BE00C8A188 /* LatestUseStatic.json */; };
 		C24301632B91DC6C00C8A188 /* LatestUseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24301622B91DC6C00C8A188 /* LatestUseResponse.swift */; };
 		C254C9CA2B751AA100F5B244 /* LuminAI_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254C9C92B751AA100F5B244 /* LuminAI_iosApp.swift */; };
@@ -31,7 +31,7 @@
 		C24301492B91CCD600C8A188 /* StaticJSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticJSONMapper.swift; sourceTree = "<group>"; };
 		C243014C2B91D3AA00C8A188 /* PageDataStatic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PageDataStatic.json; sourceTree = "<group>"; };
 		C243014E2B91D54B00C8A188 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
-		C243015A2B91D8DB00C8A188 /* SensorCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorCard.swift; sourceTree = "<group>"; };
+		C243015A2B91D8DB00C8A188 /* SensorCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorCardView.swift; sourceTree = "<group>"; };
 		C243015E2B91D9BE00C8A188 /* LatestUseStatic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LatestUseStatic.json; sourceTree = "<group>"; };
 		C24301622B91DC6C00C8A188 /* LatestUseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestUseResponse.swift; sourceTree = "<group>"; };
 		C254C9C62B751AA100F5B244 /* LuminAI-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LuminAI-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +107,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		C24301642B91E09F00C8A188 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		C2474C632B760D560025B82D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +153,7 @@
 		C2474C732B760EB30025B82D /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				C24301642B91E09F00C8A188 /* API */,
 				C243014B2B91CCDA00C8A188 /* Mapper */,
 				C24301462B91CC6B00C8A188 /* Model */,
 				C2474C742B760EBA0025B82D /* Views */,
@@ -156,7 +164,7 @@
 		C2474C742B760EBA0025B82D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C243015A2B91D8DB00C8A188 /* SensorCard.swift */,
+				C243015A2B91D8DB00C8A188 /* SensorCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,7 +352,7 @@
 				C24301632B91DC6C00C8A188 /* LatestUseResponse.swift in Sources */,
 				C24301452B91CBD600C8A188 /* PageDataResponse.swift in Sources */,
 				C243014F2B91D54B00C8A188 /* Symbols.swift in Sources */,
-				C243015B2B91D8DB00C8A188 /* SensorCard.swift in Sources */,
+				C243015B2B91D8DB00C8A188 /* SensorCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
