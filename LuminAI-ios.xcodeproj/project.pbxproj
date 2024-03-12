@@ -20,6 +20,10 @@
 		C254C9CA2B751AA100F5B244 /* LuminAI_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254C9C92B751AA100F5B244 /* LuminAI_iosApp.swift */; };
 		C254C9CE2B751AA400F5B244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C254C9CD2B751AA400F5B244 /* Assets.xcassets */; };
 		C254C9D12B751AA400F5B244 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C254C9D02B751AA400F5B244 /* Preview Assets.xcassets */; };
+		C2835B892BA0865E00CEDCC2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835B882BA0865E00CEDCC2 /* HomeViewModel.swift */; };
+		C2835B8D2BA08E0800CEDCC2 /* SensorCardStretchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835B8C2BA08E0800CEDCC2 /* SensorCardStretchedView.swift */; };
+		C2835B912BA08E7200CEDCC2 /* MostHappeningAsc.json in Resources */ = {isa = PBXBuildFile; fileRef = C2835B902BA08E7200CEDCC2 /* MostHappeningAsc.json */; };
+		C2835B932BA08EF000CEDCC2 /* MostHappeningDesc.json in Resources */ = {isa = PBXBuildFile; fileRef = C2835B922BA08EF000CEDCC2 /* MostHappeningDesc.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		C254C9C92B751AA100F5B244 /* LuminAI_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminAI_iosApp.swift; sourceTree = "<group>"; };
 		C254C9CD2B751AA400F5B244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C254C9D02B751AA400F5B244 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C2835B882BA0865E00CEDCC2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C2835B8C2BA08E0800CEDCC2 /* SensorCardStretchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorCardStretchedView.swift; sourceTree = "<group>"; };
+		C2835B902BA08E7200CEDCC2 /* MostHappeningAsc.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MostHappeningAsc.json; sourceTree = "<group>"; };
+		C2835B922BA08EF000CEDCC2 /* MostHappeningDesc.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MostHappeningDesc.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 			children = (
 				C243014C2B91D3AA00C8A188 /* PageDataStatic.json */,
 				C243015E2B91D9BE00C8A188 /* LatestUseStatic.json */,
+				C2835B902BA08E7200CEDCC2 /* MostHappeningAsc.json */,
+				C2835B922BA08EF000CEDCC2 /* MostHappeningDesc.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -165,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				C243015A2B91D8DB00C8A188 /* SensorCardView.swift */,
+				C2835B8C2BA08E0800CEDCC2 /* SensorCardStretchedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +210,7 @@
 		C2474C792B7610540025B82D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C2835B882BA0865E00CEDCC2 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -334,6 +346,8 @@
 				C243014D2B91D3AA00C8A188 /* PageDataStatic.json in Resources */,
 				C243015F2B91D9BE00C8A188 /* LatestUseStatic.json in Resources */,
 				C254C9CE2B751AA400F5B244 /* Assets.xcassets in Resources */,
+				C2835B932BA08EF000CEDCC2 /* MostHappeningDesc.json in Resources */,
+				C2835B912BA08E7200CEDCC2 /* MostHappeningAsc.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +360,9 @@
 			files = (
 				C243013C2B91BB6700C8A188 /* HomeView.swift in Sources */,
 				C243013E2B91BC6700C8A188 /* Theme.swift in Sources */,
+				C2835B8D2BA08E0800CEDCC2 /* SensorCardStretchedView.swift in Sources */,
 				C24301482B91CC7B00C8A188 /* Models.swift in Sources */,
+				C2835B892BA0865E00CEDCC2 /* HomeViewModel.swift in Sources */,
 				C254C9CA2B751AA100F5B244 /* LuminAI_iosApp.swift in Sources */,
 				C243014A2B91CCD600C8A188 /* StaticJSONMapper.swift in Sources */,
 				C24301632B91DC6C00C8A188 /* LatestUseResponse.swift in Sources */,

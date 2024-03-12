@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import Charts
 
 struct HomeView: View {
     
+    @StateObject var viewModel = HomeViewModel()
     
+    @State var sortPopoverShow = false;
     
     var body: some View {
         NavigationView {
@@ -17,15 +20,42 @@ struct HomeView: View {
                 Theme.background
                     .ignoresSafeArea(edges: .top)
                 // TODO: Chart Overview
-                
-                ScrollView(.horizontal) {
-                    HStack(spacing: 16) {
-                        ForEach(0...5, id: \.self) { item in
-                            SensorCardView(sensorName: "Sensor \(item)", sensorRoom: "Room for sensor \(item)", sensorColor: generateRandomPastelColor())
+                VStack {
+                    
+                    if let data = viewModel.chartData {
+                        Chart(data) {
+                            LineMark(
+                                x: .value("Timestamp", Date(timeIntervalSince1970: Double($0.timestamp))),
+                                y: .value("Value", $0.value)
+                            )
                         }
-                    }.padding()
+                    } else {
+                        ProgressView("Loading...").progressViewStyle(CircularProgressViewStyle())
+                    }
+     
+                    ScrollView(.horizontal) {
+                        HStack(spacing: 16) {
+                            if let sensorData = viewModel.latestUse {
+                                ForEach(sensorData) { sensor in
+                                    SensorCardView(sensorName: "\(sensor.name)", sensorRoom: "Room x", sensorColor: generateRandomPastelColor())
+                                }
+                            } else {
+                                ProgressView("Loading...")
+                                    .progressViewStyle(CircularProgressViewStyle())
+                            }
+                        }.padding()
+                    }
+                    
+                    if let data = viewModel.mostHappening {
+                        // TODO: implement sorting
+                        VStack{
+                            List(data) { sensor in
+                                Text("\(sensor.name)")
+                            }
+                        }
+                    }
                 }
-                Spacer()
+                
                 
                 // TODO: Most Happening
             }

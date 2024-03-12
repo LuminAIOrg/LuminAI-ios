@@ -1,40 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "neopixel",
-    "unit": "null",
-    "data": [
-        {
-          "timestamp": 1707390664,
-          "value": 1
-        },
-        {
-          "timestamp": 1707390670,
-          "value": 10
-        },
-        {
-          "timestamp": 1707390676,
-          "value": 16
-        },
-        {
-          "timestamp": 1707390682,
-          "value": 200
-        },
-        {
-          "timestamp": 1707390688,
-          "value": 100
-        },
-        {
-          "timestamp": 1707390694,
-          "value": 50
-        },
-        {
-          "timestamp": 1707390700,
-          "value": 23
-        }
-      ]
-  },
-  {
     "id": 2,
     "name": "temperature",
     "unit": null,
@@ -75,6 +40,63 @@
       {
         "timestamp": 1707392647,
         "value": 44.68
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "motion",
+    "unit": null,
+    "data": [
+      {
+        "timestamp": 1707392361,
+        "value": 0
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "co2",
+    "unit": null,
+    "data": [
+      {
+        "timestamp": 1707392647,
+        "value": 736.17
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "neopixel",
+    "unit": "null",
+    "data": [
+      {
+        "timestamp": 1707390664,
+        "value": 1
+      },
+      {
+        "timestamp": 1707390670,
+        "value": 10
+      },
+      {
+        "timestamp": 1707390676,
+        "value": 16
+      },
+      {
+        "timestamp": 1707390682,
+        "value": 200
+      },
+      {
+        "timestamp": 1707390688,
+        "value": 100
+      },
+      {
+        "timestamp": 1707390694,
+        "value": 50
+      },
+      {
+        "timestamp": 1707390700,
+        "value": 23
       }
     ]
   },
@@ -142,28 +164,6 @@
       {
         "timestamp": 1709223678135,
         "value": 116.8919293643896
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "name": "co2",
-    "unit": null,
-    "data": [
-      {
-        "timestamp": 1707392647,
-        "value": 736.17
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "name": "motion",
-    "unit": null,
-    "data": [
-      {
-        "timestamp": 1707392361,
-        "value": 0
       }
     ]
   }

@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Sensor
-struct Sensor: Codable {
+struct Sensor: Codable, Identifiable {
     let id: Int
     let name: String
     let unit: String?
@@ -16,7 +16,10 @@ struct Sensor: Codable {
 }
 
 // MARK: - Data
-struct Data: Codable {
+struct Data: Codable, Identifiable {
     let timestamp: Int
     let value: Double
+    var id: String {
+        return "\(timestamp)_\(value)"
+    }
 }
