@@ -24,7 +24,7 @@ struct HomeBigChartView: View {
                     x: .value("Timestamp", Date(timeIntervalSince1970: Double($0.timestamp))),
                     y: .value("Value", $0.value)
                 )
-                .interpolationMethod(.cardinal(tension: 0.2))
+                .interpolationMethod(.monotone)
             }
         } else {
             ProgressView("Loading...").progressViewStyle(CircularProgressViewStyle())

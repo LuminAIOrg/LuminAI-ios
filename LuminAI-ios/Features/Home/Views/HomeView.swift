@@ -37,10 +37,7 @@ struct HomeView: View {
                             .cardBackground()
                             .padding(15)
                                 
-                            
-                        HomeLatestSensorsView(viewModel:viewModel)
-                            
-                        HomeMostHappeningView(viewModel: viewModel)
+                        
                     }
                 }
                 .navigationTitle("Overview")

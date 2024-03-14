@@ -12,10 +12,8 @@
 		C24301452B91CBD600C8A188 /* PageDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24301442B91CBD600C8A188 /* PageDataResponse.swift */; };
 		C24301482B91CC7B00C8A188 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24301472B91CC7B00C8A188 /* Models.swift */; };
 		C243014A2B91CCD600C8A188 /* StaticJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24301492B91CCD600C8A188 /* StaticJSONMapper.swift */; };
-		C243014D2B91D3AA00C8A188 /* PageDataStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = C243014C2B91D3AA00C8A188 /* PageDataStatic.json */; };
 		C243014F2B91D54B00C8A188 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243014E2B91D54B00C8A188 /* Symbols.swift */; };
 		C243015B2B91D8DB00C8A188 /* SensorCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243015A2B91D8DB00C8A188 /* SensorCardView.swift */; };
-		C243015F2B91D9BE00C8A188 /* LatestUseStatic.json in Resources */ = {isa = PBXBuildFile; fileRef = C243015E2B91D9BE00C8A188 /* LatestUseStatic.json */; };
 		C24301632B91DC6C00C8A188 /* LatestUseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24301622B91DC6C00C8A188 /* LatestUseResponse.swift */; };
 		C254C9CA2B751AA100F5B244 /* LuminAI_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254C9C92B751AA100F5B244 /* LuminAI_iosApp.swift */; };
 		C254C9CE2B751AA400F5B244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C254C9CD2B751AA400F5B244 /* Assets.xcassets */; };
@@ -25,14 +23,10 @@
 		C2835B912BA08E7200CEDCC2 /* MostHappeningAsc.json in Resources */ = {isa = PBXBuildFile; fileRef = C2835B902BA08E7200CEDCC2 /* MostHappeningAsc.json */; };
 		C2835B932BA08EF000CEDCC2 /* MostHappeningDesc.json in Resources */ = {isa = PBXBuildFile; fileRef = C2835B922BA08EF000CEDCC2 /* MostHappeningDesc.json */; };
 		C2835B952BA1B9EF00CEDCC2 /* HomeBigChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835B942BA1B9EE00CEDCC2 /* HomeBigChartView.swift */; };
-		C2835B972BA1BB7A00CEDCC2 /* HomeLatestSensorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835B962BA1BB7A00CEDCC2 /* HomeLatestSensorsView.swift */; };
-		C2835B992BA1BC0300CEDCC2 /* HomeMostHappeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835B982BA1BC0300CEDCC2 /* HomeMostHappeningView.swift */; };
 		C2835B9B2BA1C79D00CEDCC2 /* SortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835B9A2BA1C79D00CEDCC2 /* SortBy.swift */; };
 		C2835BA32BA1CC7700CEDCC2 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BA22BA1CC7700CEDCC2 /* UserView.swift */; };
 		C2835BA52BA1CE1000CEDCC2 /* SensorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BA42BA1CE1000CEDCC2 /* SensorView.swift */; };
-		C2835BA92BA1D34B00CEDCC2 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BA82BA1D34B00CEDCC2 /* DevicesView.swift */; };
-		C2835BAE2BA1D48100CEDCC2 /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BAD2BA1D48100CEDCC2 /* DevicesViewModel.swift */; };
-		C2835BB02BA1D4BD00CEDCC2 /* DevicesSortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BAF2BA1D4BD00CEDCC2 /* DevicesSortBy.swift */; };
+		C2DA33BA2BA2DD1D0068EA88 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA33B92BA2DD1D0068EA88 /* DevicesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,10 +36,8 @@
 		C24301442B91CBD600C8A188 /* PageDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDataResponse.swift; sourceTree = "<group>"; };
 		C24301472B91CC7B00C8A188 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		C24301492B91CCD600C8A188 /* StaticJSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticJSONMapper.swift; sourceTree = "<group>"; };
-		C243014C2B91D3AA00C8A188 /* PageDataStatic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PageDataStatic.json; sourceTree = "<group>"; };
 		C243014E2B91D54B00C8A188 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		C243015A2B91D8DB00C8A188 /* SensorCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorCardView.swift; sourceTree = "<group>"; };
-		C243015E2B91D9BE00C8A188 /* LatestUseStatic.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LatestUseStatic.json; sourceTree = "<group>"; };
 		C24301622B91DC6C00C8A188 /* LatestUseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestUseResponse.swift; sourceTree = "<group>"; };
 		C254C9C62B751AA100F5B244 /* LuminAI-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LuminAI-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C254C9C92B751AA100F5B244 /* LuminAI_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminAI_iosApp.swift; sourceTree = "<group>"; };
@@ -56,14 +48,10 @@
 		C2835B902BA08E7200CEDCC2 /* MostHappeningAsc.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MostHappeningAsc.json; sourceTree = "<group>"; };
 		C2835B922BA08EF000CEDCC2 /* MostHappeningDesc.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MostHappeningDesc.json; sourceTree = "<group>"; };
 		C2835B942BA1B9EE00CEDCC2 /* HomeBigChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBigChartView.swift; sourceTree = "<group>"; };
-		C2835B962BA1BB7A00CEDCC2 /* HomeLatestSensorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLatestSensorsView.swift; sourceTree = "<group>"; };
-		C2835B982BA1BC0300CEDCC2 /* HomeMostHappeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMostHappeningView.swift; sourceTree = "<group>"; };
 		C2835B9A2BA1C79D00CEDCC2 /* SortBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortBy.swift; sourceTree = "<group>"; };
 		C2835BA22BA1CC7700CEDCC2 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		C2835BA42BA1CE1000CEDCC2 /* SensorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorView.swift; sourceTree = "<group>"; };
-		C2835BA82BA1D34B00CEDCC2 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
-		C2835BAD2BA1D48100CEDCC2 /* DevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
-		C2835BAF2BA1D4BD00CEDCC2 /* DevicesSortBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesSortBy.swift; sourceTree = "<group>"; };
+		C2DA33B92BA2DD1D0068EA88 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +68,6 @@
 		C24301412B91C91200C8A188 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				C243014C2B91D3AA00C8A188 /* PageDataStatic.json */,
-				C243015E2B91D9BE00C8A188 /* LatestUseStatic.json */,
 				C2835B902BA08E7200CEDCC2 /* MostHappeningAsc.json */,
 				C2835B922BA08EF000CEDCC2 /* MostHappeningDesc.json */,
 			);
@@ -200,8 +186,6 @@
 			children = (
 				C243013B2B91BB6700C8A188 /* HomeView.swift */,
 				C2835B942BA1B9EE00CEDCC2 /* HomeBigChartView.swift */,
-				C2835B962BA1BB7A00CEDCC2 /* HomeLatestSensorsView.swift */,
-				C2835B982BA1BC0300CEDCC2 /* HomeMostHappeningView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -323,7 +307,7 @@
 		C2835BA72BA1D33F00CEDCC2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C2835BA82BA1D34B00CEDCC2 /* DevicesView.swift */,
+				C2DA33B92BA2DD1D0068EA88 /* DevicesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,7 +315,6 @@
 		C2835BAA2BA1D35300CEDCC2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C2835BAF2BA1D4BD00CEDCC2 /* DevicesSortBy.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -339,7 +322,6 @@
 		C2835BAC2BA1D36600CEDCC2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				C2835BAD2BA1D48100CEDCC2 /* DevicesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -410,8 +392,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C254C9D12B751AA400F5B244 /* Preview Assets.xcassets in Resources */,
-				C243014D2B91D3AA00C8A188 /* PageDataStatic.json in Resources */,
-				C243015F2B91D9BE00C8A188 /* LatestUseStatic.json in Resources */,
 				C254C9CE2B751AA400F5B244 /* Assets.xcassets in Resources */,
 				C2835B932BA08EF000CEDCC2 /* MostHappeningDesc.json in Resources */,
 				C2835B912BA08E7200CEDCC2 /* MostHappeningAsc.json in Resources */,
@@ -431,17 +411,13 @@
 				C243013E2B91BC6700C8A188 /* Theme.swift in Sources */,
 				C2835BA32BA1CC7700CEDCC2 /* UserView.swift in Sources */,
 				C2835B8D2BA08E0800CEDCC2 /* SensorCardStretchedView.swift in Sources */,
-				C2835BA92BA1D34B00CEDCC2 /* DevicesView.swift in Sources */,
 				C24301482B91CC7B00C8A188 /* Models.swift in Sources */,
 				C2835B892BA0865E00CEDCC2 /* HomeViewModel.swift in Sources */,
 				C254C9CA2B751AA100F5B244 /* LuminAI_iosApp.swift in Sources */,
-				C2835BB02BA1D4BD00CEDCC2 /* DevicesSortBy.swift in Sources */,
 				C243014A2B91CCD600C8A188 /* StaticJSONMapper.swift in Sources */,
+				C2DA33BA2BA2DD1D0068EA88 /* DevicesView.swift in Sources */,
 				C24301632B91DC6C00C8A188 /* LatestUseResponse.swift in Sources */,
 				C24301452B91CBD600C8A188 /* PageDataResponse.swift in Sources */,
-				C2835B992BA1BC0300CEDCC2 /* HomeMostHappeningView.swift in Sources */,
-				C2835BAE2BA1D48100CEDCC2 /* DevicesViewModel.swift in Sources */,
-				C2835B972BA1BB7A00CEDCC2 /* HomeLatestSensorsView.swift in Sources */,
 				C2835B952BA1B9EF00CEDCC2 /* HomeBigChartView.swift in Sources */,
 				C243014F2B91D54B00C8A188 /* Symbols.swift in Sources */,
 				C243015B2B91D8DB00C8A188 /* SensorCardView.swift in Sources */,
