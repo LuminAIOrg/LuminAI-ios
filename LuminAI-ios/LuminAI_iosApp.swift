@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 @main
 struct LuminAI_iosApp: App {
     var body: some Scene {
@@ -16,6 +18,16 @@ struct LuminAI_iosApp: App {
                     .tabItem {
                         Symbols.homePageIcon
                         Text("Home")
+                    }
+                DevicesView()
+                    .tabItem {
+                        Symbols.devicesPageIconActive
+                        Text("Devices")
+                    }
+                UserView()
+                    .tabItem {
+                        Symbols.profilePageIcon
+                        Text("Profile")
                     }
             }
         }

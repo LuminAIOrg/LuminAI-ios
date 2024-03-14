@@ -35,7 +35,7 @@ struct SensorCardView: View {
             .padding(.horizontal)
             Spacer()
         }
-        .background()
+        .background(Theme.cardBackground)
         .frame(width: 150, height: 160, alignment: .leading)
         .cornerRadius(8.0)
         .shadow(radius: 3, y: 2)

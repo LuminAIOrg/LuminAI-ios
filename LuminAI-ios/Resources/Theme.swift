@@ -9,9 +9,20 @@ import SwiftUI
 
 enum Theme {
     static let background = Color("background");
+    static let cardBackground = Color("card-background")
+    static let launchScreenBackground = Color("launch-screen-background")
     static let text = Color("text");
+    static let border = Color("border");
     static let accent1 = Color("accent1");
     static let accent2 = Color("accent2");
+    
+    
+    enum Accents {
+        static let violet = Color("accent.violet")
+        static let blue = Color("accent.blue")
+        static let red = Color("accent.red")
+        static let orange = Color("accent.orange")
+    }
 }
 
 // Adapted from Stack Overflow answer by David Crow http://stackoverflow.com/a/43235

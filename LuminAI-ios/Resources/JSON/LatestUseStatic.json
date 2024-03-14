@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "color": "#ee86db",
     "name": "neopixel",
     "unit": "null",
     "data": [
@@ -36,6 +37,7 @@
   },
   {
     "id": 2,
+    "color": "#83d4cd",
     "name": "temperature",
     "unit": null,
     "data": [
@@ -47,6 +49,7 @@
   },
   {
     "id": 3,
+    "color": "#8dff86",
     "name": "noise",
     "unit": null,
     "data": [
@@ -58,6 +61,7 @@
   },
   {
     "id": 4,
+    "color": "#82d2d4",
     "name": "pressure",
     "unit": null,
     "data": [
@@ -69,6 +73,7 @@
   },
   {
     "id": 6,
+    "color": "#db8dd2",
     "name": "humidity",
     "unit": null,
     "data": [
@@ -80,6 +85,7 @@
   },
   {
     "id": 51,
+    "color": "#d18ab1",
     "name": "MockedSensor",
     "unit": null,
     "data": [
@@ -147,6 +153,7 @@
   },
   {
     "id": 5,
+    "color": "#9d8e95",
     "name": "co2",
     "unit": null,
     "data": [
@@ -158,6 +165,7 @@
   },
   {
     "id": 7,
+    "color": "#bf81ed",
     "name": "motion",
     "unit": null,
     "data": [

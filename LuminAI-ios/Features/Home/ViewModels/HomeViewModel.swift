@@ -17,7 +17,7 @@ class HomeViewModel: ObservableObject {
         do {
             self.chartData = try StaticJSONMapper.decode(file: "LatestUseStatic", type: LatestUseResponse.self).first?.data ?? [];
             self.latestUse = try StaticJSONMapper.decode(file: "LatestUseStatic", type: LatestUseResponse.self);
-            self.mostHappening = try StaticJSONMapper.decode(file: "MostHappeningAsc", type: LatestUseResponse.self);
+            self.mostHappening = try StaticJSONMapper.decode(file: "MostHappeningDesc", type: LatestUseResponse.self);
         } catch {
             print("Something went wrong")
         }
@@ -35,21 +35,4 @@ class HomeViewModel: ObservableObject {
         }
         
     }
-}
-
-enum SortBy: String, CaseIterable, Identifiable {
-    case ASC
-    case DESC
-    public var id: Self {
-        return self
-    }
-    
-    var title: String {
-            switch self {
-                case .ASC:
-                    return "Ascending"
-                case .DESC:
-                    return "Descending"
-            }
-        }
 }

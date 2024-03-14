@@ -12,6 +12,7 @@ struct Sensor: Codable, Identifiable {
     let id: Int
     let name: String
     let unit: String?
+    let color: String?
     let data: [Data]
 }
 

@@ -24,6 +24,15 @@
 		C2835B8D2BA08E0800CEDCC2 /* SensorCardStretchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835B8C2BA08E0800CEDCC2 /* SensorCardStretchedView.swift */; };
 		C2835B912BA08E7200CEDCC2 /* MostHappeningAsc.json in Resources */ = {isa = PBXBuildFile; fileRef = C2835B902BA08E7200CEDCC2 /* MostHappeningAsc.json */; };
 		C2835B932BA08EF000CEDCC2 /* MostHappeningDesc.json in Resources */ = {isa = PBXBuildFile; fileRef = C2835B922BA08EF000CEDCC2 /* MostHappeningDesc.json */; };
+		C2835B952BA1B9EF00CEDCC2 /* HomeBigChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835B942BA1B9EE00CEDCC2 /* HomeBigChartView.swift */; };
+		C2835B972BA1BB7A00CEDCC2 /* HomeLatestSensorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835B962BA1BB7A00CEDCC2 /* HomeLatestSensorsView.swift */; };
+		C2835B992BA1BC0300CEDCC2 /* HomeMostHappeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835B982BA1BC0300CEDCC2 /* HomeMostHappeningView.swift */; };
+		C2835B9B2BA1C79D00CEDCC2 /* SortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835B9A2BA1C79D00CEDCC2 /* SortBy.swift */; };
+		C2835BA32BA1CC7700CEDCC2 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BA22BA1CC7700CEDCC2 /* UserView.swift */; };
+		C2835BA52BA1CE1000CEDCC2 /* SensorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BA42BA1CE1000CEDCC2 /* SensorView.swift */; };
+		C2835BA92BA1D34B00CEDCC2 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BA82BA1D34B00CEDCC2 /* DevicesView.swift */; };
+		C2835BAE2BA1D48100CEDCC2 /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BAD2BA1D48100CEDCC2 /* DevicesViewModel.swift */; };
+		C2835BB02BA1D4BD00CEDCC2 /* DevicesSortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BAF2BA1D4BD00CEDCC2 /* DevicesSortBy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +55,15 @@
 		C2835B8C2BA08E0800CEDCC2 /* SensorCardStretchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorCardStretchedView.swift; sourceTree = "<group>"; };
 		C2835B902BA08E7200CEDCC2 /* MostHappeningAsc.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MostHappeningAsc.json; sourceTree = "<group>"; };
 		C2835B922BA08EF000CEDCC2 /* MostHappeningDesc.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MostHappeningDesc.json; sourceTree = "<group>"; };
+		C2835B942BA1B9EE00CEDCC2 /* HomeBigChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBigChartView.swift; sourceTree = "<group>"; };
+		C2835B962BA1BB7A00CEDCC2 /* HomeLatestSensorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLatestSensorsView.swift; sourceTree = "<group>"; };
+		C2835B982BA1BC0300CEDCC2 /* HomeMostHappeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMostHappeningView.swift; sourceTree = "<group>"; };
+		C2835B9A2BA1C79D00CEDCC2 /* SortBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortBy.swift; sourceTree = "<group>"; };
+		C2835BA22BA1CC7700CEDCC2 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		C2835BA42BA1CE1000CEDCC2 /* SensorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorView.swift; sourceTree = "<group>"; };
+		C2835BA82BA1D34B00CEDCC2 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
+		C2835BAD2BA1D48100CEDCC2 /* DevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
+		C2835BAF2BA1D4BD00CEDCC2 /* DevicesSortBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesSortBy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,32 +155,19 @@
 		C2474C642B760DD40025B82D /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				C2835BA62BA1D33500CEDCC2 /* Devices */,
+				C2835BA02BA1CC6300CEDCC2 /* User */,
 				C24301502B91D81100C8A188 /* Calendar */,
 				C2474C7A2B7619370025B82D /* Sensor */,
 				C2474C752B760FE40025B82D /* Home */,
-				C2474C652B760DDB0025B82D /* Settings */,
 			);
 			path = Features;
-			sourceTree = "<group>";
-		};
-		C2474C652B760DDB0025B82D /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				C2474C722B760E810025B82D /* Views */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		C2474C722B760E810025B82D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		C2474C732B760EB30025B82D /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				C2DA33B62BA22E800068EA88 /* Extensions */,
 				C24301642B91E09F00C8A188 /* API */,
 				C243014B2B91CCDA00C8A188 /* Mapper */,
 				C24301462B91CC6B00C8A188 /* Model */,
@@ -194,6 +199,9 @@
 			isa = PBXGroup;
 			children = (
 				C243013B2B91BB6700C8A188 /* HomeView.swift */,
+				C2835B942BA1B9EE00CEDCC2 /* HomeBigChartView.swift */,
+				C2835B962BA1BB7A00CEDCC2 /* HomeLatestSensorsView.swift */,
+				C2835B982BA1BC0300CEDCC2 /* HomeMostHappeningView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,6 +211,7 @@
 			children = (
 				C24301442B91CBD600C8A188 /* PageDataResponse.swift */,
 				C24301622B91DC6C00C8A188 /* LatestUseResponse.swift */,
+				C2835B9A2BA1C79D00CEDCC2 /* SortBy.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,6 +237,7 @@
 		C2474C7B2B76193D0025B82D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C2835BA42BA1CE1000CEDCC2 /* SensorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -282,6 +292,63 @@
 				C254C9D02B751AA400F5B244 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2835BA02BA1CC6300CEDCC2 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				C2835BA12BA1CC6900CEDCC2 /* Views */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		C2835BA12BA1CC6900CEDCC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2835BA22BA1CC7700CEDCC2 /* UserView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2835BA62BA1D33500CEDCC2 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				C2835BAC2BA1D36600CEDCC2 /* ViewModels */,
+				C2835BAA2BA1D35300CEDCC2 /* Model */,
+				C2835BA72BA1D33F00CEDCC2 /* Views */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		C2835BA72BA1D33F00CEDCC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2835BA82BA1D34B00CEDCC2 /* DevicesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2835BAA2BA1D35300CEDCC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2835BAF2BA1D4BD00CEDCC2 /* DevicesSortBy.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2835BAC2BA1D36600CEDCC2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C2835BAD2BA1D48100CEDCC2 /* DevicesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C2DA33B62BA22E800068EA88 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,15 +425,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2835B9B2BA1C79D00CEDCC2 /* SortBy.swift in Sources */,
 				C243013C2B91BB6700C8A188 /* HomeView.swift in Sources */,
+				C2835BA52BA1CE1000CEDCC2 /* SensorView.swift in Sources */,
 				C243013E2B91BC6700C8A188 /* Theme.swift in Sources */,
+				C2835BA32BA1CC7700CEDCC2 /* UserView.swift in Sources */,
 				C2835B8D2BA08E0800CEDCC2 /* SensorCardStretchedView.swift in Sources */,
+				C2835BA92BA1D34B00CEDCC2 /* DevicesView.swift in Sources */,
 				C24301482B91CC7B00C8A188 /* Models.swift in Sources */,
 				C2835B892BA0865E00CEDCC2 /* HomeViewModel.swift in Sources */,
 				C254C9CA2B751AA100F5B244 /* LuminAI_iosApp.swift in Sources */,
+				C2835BB02BA1D4BD00CEDCC2 /* DevicesSortBy.swift in Sources */,
 				C243014A2B91CCD600C8A188 /* StaticJSONMapper.swift in Sources */,
 				C24301632B91DC6C00C8A188 /* LatestUseResponse.swift in Sources */,
 				C24301452B91CBD600C8A188 /* PageDataResponse.swift in Sources */,
+				C2835B992BA1BC0300CEDCC2 /* HomeMostHappeningView.swift in Sources */,
+				C2835BAE2BA1D48100CEDCC2 /* DevicesViewModel.swift in Sources */,
+				C2835B972BA1BB7A00CEDCC2 /* HomeLatestSensorsView.swift in Sources */,
+				C2835B952BA1B9EF00CEDCC2 /* HomeBigChartView.swift in Sources */,
 				C243014F2B91D54B00C8A188 /* Symbols.swift in Sources */,
 				C243015B2B91D8DB00C8A188 /* SensorCardView.swift in Sources */,
 			);
