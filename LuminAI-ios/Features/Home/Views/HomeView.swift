@@ -37,8 +37,19 @@ struct HomeView: View {
                             .cardBackground()
                             .padding(15)
                                 
-                            
+                        Text("Latest Use")
+                            .font(.title)
+                            .bold()
+                            .padding(.horizontal)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
                         HomeLatestSensorsView(viewModel:viewModel)
+                        
+                        Text("Most Happening")
+                            .font(.title)
+                            .bold()
+                            .padding(.horizontal)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                             
                         HomeMostHappeningView(viewModel: viewModel)
                     }

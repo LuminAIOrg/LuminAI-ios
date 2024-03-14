@@ -16,9 +16,12 @@ enum NetworkError: Error {
 }
 
 class WebService: Codable {
+    
+    let baseUrl: String = "http://localhost:8080"
+    
     func fetch<T: Codable>(fromURL: String) async -> T? {
         do {
-            guard let url = URL(string: fromURL) else { throw NetworkError.badUrl }
+            guard let url = URL(string: "\(baseUrl)\(fromURL)") else { throw NetworkError.badUrl }
             let (data, response) = try await URLSession.shared.data(from: url)
             guard let response = response as? HTTPURLResponse else { throw NetworkError.badResponse }
             guard response.statusCode >= 200 && response.statusCode < 300 else { throw NetworkError.badStatus }

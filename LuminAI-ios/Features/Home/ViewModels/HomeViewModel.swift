@@ -24,7 +24,7 @@ class HomeViewModel: ObservableObject {
     }
     
     func fetchPagedSensors() async {
-        guard let pagedSensors: PageDataResponse = await WebService().fetch(fromURL: "http://localhost:8080/api/data/page") else {return}
+        guard let pagedSensors: PageDataResponse = await WebService().fetch(fromURL: "/api/data/page") else {return}
         
         print(pagedSensors)
     }

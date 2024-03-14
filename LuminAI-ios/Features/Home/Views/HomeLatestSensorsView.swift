@@ -47,7 +47,7 @@ struct HomeLatestSensorsView: View {
                     ProgressView("Loading...")
                         .progressViewStyle(CircularProgressViewStyle())
                 }
-            }.padding()
+            }.padding(EdgeInsets(top: 0, leading: 15, bottom: 15, trailing: 15))
         }
     }
 }
