@@ -33,6 +33,7 @@
 		C2835BA92BA1D34B00CEDCC2 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BA82BA1D34B00CEDCC2 /* DevicesView.swift */; };
 		C2835BAE2BA1D48100CEDCC2 /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BAD2BA1D48100CEDCC2 /* DevicesViewModel.swift */; };
 		C2835BB02BA1D4BD00CEDCC2 /* DevicesSortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BAF2BA1D4BD00CEDCC2 /* DevicesSortBy.swift */; };
+		C2DA33BC2BA2F38D0068EA88 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA33BB2BA2F38D0068EA88 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		C2835BA82BA1D34B00CEDCC2 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
 		C2835BAD2BA1D48100CEDCC2 /* DevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
 		C2835BAF2BA1D4BD00CEDCC2 /* DevicesSortBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesSortBy.swift; sourceTree = "<group>"; };
+		C2DA33BB2BA2F38D0068EA88 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		C24301642B91E09F00C8A188 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				C2DA33BB2BA2F38D0068EA88 /* WebService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				C2835BA92BA1D34B00CEDCC2 /* DevicesView.swift in Sources */,
 				C24301482B91CC7B00C8A188 /* Models.swift in Sources */,
 				C2835B892BA0865E00CEDCC2 /* HomeViewModel.swift in Sources */,
+				C2DA33BC2BA2F38D0068EA88 /* WebService.swift in Sources */,
 				C254C9CA2B751AA100F5B244 /* LuminAI_iosApp.swift in Sources */,
 				C2835BB02BA1D4BD00CEDCC2 /* DevicesSortBy.swift in Sources */,
 				C243014A2B91CCD600C8A188 /* StaticJSONMapper.swift in Sources */,

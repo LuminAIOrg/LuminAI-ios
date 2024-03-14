@@ -43,6 +43,11 @@ struct HomeView: View {
                         HomeMostHappeningView(viewModel: viewModel)
                     }
                 }
+                .onAppear {
+                    Task {
+                        await viewModel.fetchPagedSensors()
+                    }
+                }
                 .navigationTitle("Overview")
                     
                 .toolbarBackground(navigationColor, for: .navigationBar)
