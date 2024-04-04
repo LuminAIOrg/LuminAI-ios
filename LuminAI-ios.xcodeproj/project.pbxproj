@@ -34,6 +34,8 @@
 		C2835BAE2BA1D48100CEDCC2 /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BAD2BA1D48100CEDCC2 /* DevicesViewModel.swift */; };
 		C2835BB02BA1D4BD00CEDCC2 /* DevicesSortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BAF2BA1D4BD00CEDCC2 /* DevicesSortBy.swift */; };
 		C2DA33BC2BA2F38D0068EA88 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA33BB2BA2F38D0068EA88 /* WebService.swift */; };
+		C2F8E04E2BBC1BC4005A5FC1 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8E04D2BBC1BC4005A5FC1 /* CalendarView.swift */; };
+		C2F8E0502BBC212C005A5FC1 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8E04F2BBC212C005A5FC1 /* CalendarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,8 @@
 		C2835BAD2BA1D48100CEDCC2 /* DevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
 		C2835BAF2BA1D4BD00CEDCC2 /* DevicesSortBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesSortBy.swift; sourceTree = "<group>"; };
 		C2DA33BB2BA2F38D0068EA88 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		C2F8E04D2BBC1BC4005A5FC1 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		C2F8E04F2BBC212C005A5FC1 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 		C24301512B91D81C00C8A188 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C2F8E04F2BBC212C005A5FC1 /* CalendarViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 		C24301532B91D82800C8A188 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C2F8E04D2BBC1BC4005A5FC1 /* CalendarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -433,7 +439,9 @@
 				C2835BA52BA1CE1000CEDCC2 /* SensorView.swift in Sources */,
 				C243013E2B91BC6700C8A188 /* Theme.swift in Sources */,
 				C2835BA32BA1CC7700CEDCC2 /* UserView.swift in Sources */,
+				C2F8E0502BBC212C005A5FC1 /* CalendarViewModel.swift in Sources */,
 				C2835B8D2BA08E0800CEDCC2 /* SensorCardStretchedView.swift in Sources */,
+				C2F8E04E2BBC1BC4005A5FC1 /* CalendarView.swift in Sources */,
 				C2835BA92BA1D34B00CEDCC2 /* DevicesView.swift in Sources */,
 				C24301482B91CC7B00C8A188 /* Models.swift in Sources */,
 				C2835B892BA0865E00CEDCC2 /* HomeViewModel.swift in Sources */,

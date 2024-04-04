@@ -18,6 +18,9 @@ enum Symbols {
     static let profilePageIconActive = Image(systemName: "person.fill");
     static let profilePageIcon = Image(systemName: "person")
     
+    static let backArrow = Image(systemName: "arrow.backward");
+    static let forwardArrow = Image(systemName: "arrow.forward");
+    
     static let calendar = Image(systemName: "calendar")
     
     static let wave = Image("Wave");
