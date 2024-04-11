@@ -28,15 +28,7 @@ enum Month: String {
 struct CalendarView: View {
     
     var navigationColor: Color = Theme.Accents.blue;
-    
-    @StateObject var viewModel = CalendarViewModel();
-    
-    let dateFormatter: DateFormatter;
-    
-    init() {
-        dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy"
-    }
+
     
     var body: some View {
         ScrollView {
@@ -46,58 +38,6 @@ struct CalendarView: View {
                     .ignoresSafeArea(edges: .top)
                     .frame(height: 600)
                 VStack {
-                    HStack{
-                        Button(action: {
-                            viewModel.monthBack()
-                        }) {
-                            Symbols.backArrow
-                        }
-                        
-                        Spacer()
-                        
-                        ZStack {
-                            Text("\(DateFormatter().monthSymbols[(viewModel.month + 0) % 12])")
-                                .bold()
-                            
-                            HStack(alignment: .center) {
-                                //Text("\(DateFormatter().monthSymbols[(viewModel.month + 10) % 12])")
-                                Text("\(DateFormatter().monthSymbols[(viewModel.month + 11) % 12])")
-                                
-                                Spacer()
-                                
-                                Text("\(DateFormatter().monthSymbols[(viewModel.month + 1) % 12])")
-                                //Text("\(DateFormatter().monthSymbols[(viewModel.month + 2) % 12])")
-                            }
-                        }
-
-                        Spacer()
-                        
-                        Button(action: {
-                            viewModel.monthForward()
-                        }) {
-                            Symbols.forwardArrow
-                        }
-                    }.padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
-                    
-                    HStack {
-                        Button(action: {
-                            viewModel.yearBack()
-                        }) {
-                            Symbols.backArrow
-                        }
-                        
-                        Spacer();
-                        
-                        Text("\(viewModel.getFormattedYear(year: viewModel.year))")
-                        
-                        Spacer()
-                        
-                        Button(action: {
-                            viewModel.yearForward()
-                        }) {
-                            Symbols.forwardArrow
-                        }
-                    }.padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
                     
                     
                     

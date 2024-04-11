@@ -6,20 +6,3 @@
 //
 
 import Foundation
-
-enum DevicesSortBy: String, CaseIterable, Identifiable {
-    case ASC
-    case DESC
-    public var id: Self {
-        return self
-    }
-    
-    var title: String {
-            switch self {
-                case .ASC:
-                    return "Ascending"
-                case .DESC:
-                    return "Descending"
-            }
-        }
-}
