@@ -11,6 +11,27 @@ struct UserView: View {
     
     var navigationColor: Color = Theme.Accents.orange;
     
+    
+    @State private var authorizationFlowInitiated = false;
+    
+    @ObservedObject
+    var viewModel: UserViewModel;
+
+    @ObservedObject
+    var webViewModel: WebViewModel;
+    
+    @ObservedObject
+    var appAuth: AppAuthHandler;
+    
+    @State var tokens = TokenStorage.shared.getTokens()
+    
+    
+    private func getHostingViewController() -> UIViewController {
+        let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        return scene!.keyWindow!.rootViewController!
+    }
+
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -19,7 +40,35 @@ struct UserView: View {
                     .ignoresSafeArea(edges: .top)
                     .frame(height: 400)
                 VStack {
-                    
+                    if(appAuth.isAuthenticated) {
+                        VStack {
+                            Text("Authenticated")
+         
+                            Text("Username: \(viewModel.username)")
+                            
+                            
+                            Button("Logout") {
+                                authorizationFlowInitiated = false;
+                                appAuth.logout()
+                                
+                            }
+                        }.onAppear {
+                            viewModel.getUserName()
+                        }
+                        
+                    } else {
+                        if(authorizationFlowInitiated) {
+                            WebViewContainer(webViewModel: webViewModel)
+                        } else {
+                            Button("Authenticate") {
+                                Task {
+                                    webViewModel.url = try await viewModel.buildLoginUrl();
+                                    authorizationFlowInitiated = true;
+                                }
+                            }
+                        }
+                    }
+
                 }
                 
             }
@@ -30,6 +79,6 @@ struct UserView: View {
     }
 }
 
-#Preview {
-    UserView()
-}
+//#Preview {
+//    UserView()
+//}

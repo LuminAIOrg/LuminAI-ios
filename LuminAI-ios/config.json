@@ -1,0 +1,8 @@
+{
+  "issuer": "https://keycloak.stenz.dev/realms/luminai/",
+  "clientID": "luminai-ios",
+  "redirectUri": "http://localhost:8080",
+  "postLogoutRedirectUri": "io.curity.client:/logoutcallback",
+  "scope": "openid profile",
+  "secret": "MMAyB0DYBQz620xDaJ1n5yML540TzN11"
+}

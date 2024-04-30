@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A703439DB1A83FD422FC234 /* libPods-LuminAI-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 207542D35F451DC8F53448C1 /* libPods-LuminAI-ios.a */; };
 		C243013C2B91BB6700C8A188 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243013B2B91BB6700C8A188 /* HomeView.swift */; };
 		C243013E2B91BC6700C8A188 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243013D2B91BC6700C8A188 /* Theme.swift */; };
 		C24301452B91CBD600C8A188 /* PageDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24301442B91CBD600C8A188 /* PageDataResponse.swift */; };
@@ -20,6 +21,7 @@
 		C254C9CA2B751AA100F5B244 /* LuminAI_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C254C9C92B751AA100F5B244 /* LuminAI_iosApp.swift */; };
 		C254C9CE2B751AA400F5B244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C254C9CD2B751AA400F5B244 /* Assets.xcassets */; };
 		C254C9D12B751AA400F5B244 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C254C9D02B751AA400F5B244 /* Preview Assets.xcassets */; };
+		C26F20EF2BDD4021001C52CB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26F20EE2BDD4021001C52CB /* Model.swift */; };
 		C2835B892BA0865E00CEDCC2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835B882BA0865E00CEDCC2 /* HomeViewModel.swift */; };
 		C2835B8D2BA08E0800CEDCC2 /* SensorCardStretchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835B8C2BA08E0800CEDCC2 /* SensorCardStretchedView.swift */; };
 		C2835B912BA08E7200CEDCC2 /* MostHappeningAsc.json in Resources */ = {isa = PBXBuildFile; fileRef = C2835B902BA08E7200CEDCC2 /* MostHappeningAsc.json */; };
@@ -33,12 +35,23 @@
 		C2835BA92BA1D34B00CEDCC2 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BA82BA1D34B00CEDCC2 /* DevicesView.swift */; };
 		C2835BAE2BA1D48100CEDCC2 /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BAD2BA1D48100CEDCC2 /* DevicesViewModel.swift */; };
 		C2835BB02BA1D4BD00CEDCC2 /* DevicesSortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2835BAF2BA1D4BD00CEDCC2 /* DevicesSortBy.swift */; };
+		C2A7120F2BDA54D600E61894 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A7120E2BDA54D600E61894 /* AuthService.swift */; };
+		C2A712142BDA553D00E61894 /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A712132BDA553D00E61894 /* TokenStorage.swift */; };
+		C2A7121C2BDA83D500E61894 /* ApplicationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A7121B2BDA83D500E61894 /* ApplicationConfig.swift */; };
+		C2A7121E2BDA83EF00E61894 /* ApplicationConfigLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A7121D2BDA83EF00E61894 /* ApplicationConfigLoader.swift */; };
+		C2A7122E2BDA864200E61894 /* ApplicationStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A7122D2BDA864200E61894 /* ApplicationStateManager.swift */; };
+		C2A7123A2BDA8CE000E61894 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A712392BDA8CE000E61894 /* Logger.swift */; };
+		C2A7123C2BDA8FB000E61894 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = C2A7123B2BDA8FB000E61894 /* config.json */; };
+		C2A712412BDAAE9700E61894 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A712402BDAAE9700E61894 /* UserViewModel.swift */; };
 		C2DA33BC2BA2F38D0068EA88 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA33BB2BA2F38D0068EA88 /* WebService.swift */; };
 		C2F8E04E2BBC1BC4005A5FC1 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8E04D2BBC1BC4005A5FC1 /* CalendarView.swift */; };
 		C2F8E0502BBC212C005A5FC1 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F8E04F2BBC212C005A5FC1 /* CalendarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B460AA39DA40BC9FF649DEC /* Pods-LuminAI-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuminAI-ios.debug.xcconfig"; path = "Target Support Files/Pods-LuminAI-ios/Pods-LuminAI-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		207542D35F451DC8F53448C1 /* libPods-LuminAI-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LuminAI-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76DB2F9309872DEAE43E035E /* Pods-LuminAI-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuminAI-ios.release.xcconfig"; path = "Target Support Files/Pods-LuminAI-ios/Pods-LuminAI-ios.release.xcconfig"; sourceTree = "<group>"; };
 		C243013B2B91BB6700C8A188 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C243013D2B91BC6700C8A188 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		C243013F2B91C1F400C8A188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +67,8 @@
 		C254C9C92B751AA100F5B244 /* LuminAI_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuminAI_iosApp.swift; sourceTree = "<group>"; };
 		C254C9CD2B751AA400F5B244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C254C9D02B751AA400F5B244 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C26F20ED2BDD2F26001C52CB /* LuminAI-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LuminAI-ios.entitlements"; sourceTree = "<group>"; };
+		C26F20EE2BDD4021001C52CB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C2835B882BA0865E00CEDCC2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C2835B8C2BA08E0800CEDCC2 /* SensorCardStretchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorCardStretchedView.swift; sourceTree = "<group>"; };
 		C2835B902BA08E7200CEDCC2 /* MostHappeningAsc.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MostHappeningAsc.json; sourceTree = "<group>"; };
@@ -67,6 +82,14 @@
 		C2835BA82BA1D34B00CEDCC2 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
 		C2835BAD2BA1D48100CEDCC2 /* DevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
 		C2835BAF2BA1D4BD00CEDCC2 /* DevicesSortBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesSortBy.swift; sourceTree = "<group>"; };
+		C2A7120E2BDA54D600E61894 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C2A712132BDA553D00E61894 /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
+		C2A7121B2BDA83D500E61894 /* ApplicationConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConfig.swift; sourceTree = "<group>"; };
+		C2A7121D2BDA83EF00E61894 /* ApplicationConfigLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConfigLoader.swift; sourceTree = "<group>"; };
+		C2A7122D2BDA864200E61894 /* ApplicationStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationStateManager.swift; sourceTree = "<group>"; };
+		C2A712392BDA8CE000E61894 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		C2A7123B2BDA8FB000E61894 /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		C2A712402BDAAE9700E61894 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		C2DA33BB2BA2F38D0068EA88 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		C2F8E04D2BBC1BC4005A5FC1 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		C2F8E04F2BBC212C005A5FC1 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
@@ -77,12 +100,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A703439DB1A83FD422FC234 /* libPods-LuminAI-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5174FBB9F92E3367526D1419 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B460AA39DA40BC9FF649DEC /* Pods-LuminAI-ios.debug.xcconfig */,
+				76DB2F9309872DEAE43E035E /* Pods-LuminAI-ios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		69AEB3779088CFCB1C8AF410 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				207542D35F451DC8F53448C1 /* libPods-LuminAI-ios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C24301412B91C91200C8A188 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,11 +217,15 @@
 		C2474C732B760EB30025B82D /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				C2A712342BDA891600E61894 /* Auth */,
 				C2DA33B62BA22E800068EA88 /* Extensions */,
 				C24301642B91E09F00C8A188 /* API */,
 				C243014B2B91CCDA00C8A188 /* Mapper */,
 				C24301462B91CC6B00C8A188 /* Model */,
 				C2474C742B760EBA0025B82D /* Views */,
+				C2A712132BDA553D00E61894 /* TokenStorage.swift */,
+				C2A7122D2BDA864200E61894 /* ApplicationStateManager.swift */,
+				C2A712392BDA8CE000E61894 /* Logger.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -270,6 +315,8 @@
 			children = (
 				C254C9C82B751AA100F5B244 /* LuminAI-ios */,
 				C254C9C72B751AA100F5B244 /* Products */,
+				5174FBB9F92E3367526D1419 /* Pods */,
+				69AEB3779088CFCB1C8AF410 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -284,6 +331,8 @@
 		C254C9C82B751AA100F5B244 /* LuminAI-ios */ = {
 			isa = PBXGroup;
 			children = (
+				C26F20ED2BDD2F26001C52CB /* LuminAI-ios.entitlements */,
+				C2A7121A2BDA83C300E61894 /* Configuration */,
 				C243013F2B91C1F400C8A188 /* Info.plist */,
 				C2474C732B760EB30025B82D /* Base */,
 				C2474C642B760DD40025B82D /* Features */,
@@ -291,6 +340,7 @@
 				C254C9C92B751AA100F5B244 /* LuminAI_iosApp.swift */,
 				C254C9CD2B751AA400F5B244 /* Assets.xcassets */,
 				C254C9CF2B751AA400F5B244 /* Preview Content */,
+				C2A7123B2BDA8FB000E61894 /* config.json */,
 			);
 			path = "LuminAI-ios";
 			sourceTree = "<group>";
@@ -303,9 +353,19 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C26F20F02BDD4033001C52CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C26F20EE2BDD4021001C52CB /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C2835BA02BA1CC6300CEDCC2 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				C26F20F02BDD4033001C52CB /* Models */,
+				C2A7123D2BDAAE6700E61894 /* ViewModels */,
 				C2835BA12BA1CC6900CEDCC2 /* Views */,
 			);
 			path = User;
@@ -353,6 +413,31 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		C2A7121A2BDA83C300E61894 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C2A7121B2BDA83D500E61894 /* ApplicationConfig.swift */,
+				C2A7121D2BDA83EF00E61894 /* ApplicationConfigLoader.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		C2A712342BDA891600E61894 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C2A7120E2BDA54D600E61894 /* AuthService.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C2A7123D2BDAAE6700E61894 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C2A712402BDAAE9700E61894 /* UserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		C2DA33B62BA22E800068EA88 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -367,9 +452,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C254C9D42B751AA400F5B244 /* Build configuration list for PBXNativeTarget "LuminAI-ios" */;
 			buildPhases = (
+				DFC56F953FB16AC4901F1702 /* [CP] Check Pods Manifest.lock */,
 				C254C9C22B751AA100F5B244 /* Sources */,
 				C254C9C32B751AA100F5B244 /* Frameworks */,
 				C254C9C42B751AA100F5B244 /* Resources */,
+				A604878B10E2800C0B722E87 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -418,6 +505,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A7123C2BDA8FB000E61894 /* config.json in Resources */,
 				C254C9D12B751AA400F5B244 /* Preview Assets.xcassets in Resources */,
 				C243014D2B91D3AA00C8A188 /* PageDataStatic.json in Resources */,
 				C243015F2B91D9BE00C8A188 /* LatestUseStatic.json in Resources */,
@@ -429,12 +517,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A604878B10E2800C0B722E87 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuminAI-ios/Pods-LuminAI-ios-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuminAI-ios/Pods-LuminAI-ios-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LuminAI-ios/Pods-LuminAI-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFC56F953FB16AC4901F1702 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuminAI-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C254C9C22B751AA100F5B244 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C2835B9B2BA1C79D00CEDCC2 /* SortBy.swift in Sources */,
+				C2A712142BDA553D00E61894 /* TokenStorage.swift in Sources */,
 				C243013C2B91BB6700C8A188 /* HomeView.swift in Sources */,
 				C2835BA52BA1CE1000CEDCC2 /* SensorView.swift in Sources */,
 				C243013E2B91BC6700C8A188 /* Theme.swift in Sources */,
@@ -442,10 +573,14 @@
 				C2F8E0502BBC212C005A5FC1 /* CalendarViewModel.swift in Sources */,
 				C2835B8D2BA08E0800CEDCC2 /* SensorCardStretchedView.swift in Sources */,
 				C2F8E04E2BBC1BC4005A5FC1 /* CalendarView.swift in Sources */,
+				C2A7121E2BDA83EF00E61894 /* ApplicationConfigLoader.swift in Sources */,
 				C2835BA92BA1D34B00CEDCC2 /* DevicesView.swift in Sources */,
 				C24301482B91CC7B00C8A188 /* Models.swift in Sources */,
 				C2835B892BA0865E00CEDCC2 /* HomeViewModel.swift in Sources */,
+				C2A712412BDAAE9700E61894 /* UserViewModel.swift in Sources */,
 				C2DA33BC2BA2F38D0068EA88 /* WebService.swift in Sources */,
+				C2A7123A2BDA8CE000E61894 /* Logger.swift in Sources */,
+				C26F20EF2BDD4021001C52CB /* Model.swift in Sources */,
 				C254C9CA2B751AA100F5B244 /* LuminAI_iosApp.swift in Sources */,
 				C2835BB02BA1D4BD00CEDCC2 /* DevicesSortBy.swift in Sources */,
 				C243014A2B91CCD600C8A188 /* StaticJSONMapper.swift in Sources */,
@@ -456,7 +591,10 @@
 				C2835B972BA1BB7A00CEDCC2 /* HomeLatestSensorsView.swift in Sources */,
 				C2835B952BA1B9EF00CEDCC2 /* HomeBigChartView.swift in Sources */,
 				C243014F2B91D54B00C8A188 /* Symbols.swift in Sources */,
+				C2A7120F2BDA54D600E61894 /* AuthService.swift in Sources */,
+				C2A7121C2BDA83D500E61894 /* ApplicationConfig.swift in Sources */,
 				C243015B2B91D8DB00C8A188 /* SensorCardView.swift in Sources */,
+				C2A7122E2BDA864200E61894 /* ApplicationStateManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,7 +638,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -563,7 +701,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -584,9 +722,11 @@
 		};
 		C254C9D52B751AA400F5B244 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B460AA39DA40BC9FF649DEC /* Pods-LuminAI-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "LuminAI-ios/LuminAI-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LuminAI-ios/Preview Content\"";
@@ -613,9 +753,11 @@
 		};
 		C254C9D62B751AA400F5B244 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76DB2F9309872DEAE43E035E /* Pods-LuminAI-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "LuminAI-ios/LuminAI-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LuminAI-ios/Preview Content\"";

@@ -24,9 +24,13 @@ class HomeViewModel: ObservableObject {
     }
     
     func fetchPagedSensors() async {
-        guard let pagedSensors: PageDataResponse = await WebService().fetch(fromURL: "/api/data/page") else {return}
-        
-        print(pagedSensors)
+        do {
+            let pagedSensors: PageDataResponse = try await WebService.shared.fetchWithToken(fromURL: "/api/data/page");
+            
+            print(pagedSensors)
+        } catch {
+           print(error)
+        }
     }
     
     func changeMostHappeningSort(sorting: SortBy) {

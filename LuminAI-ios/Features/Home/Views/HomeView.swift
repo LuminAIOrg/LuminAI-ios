@@ -17,10 +17,9 @@ struct HomeView: View {
     
     var navigationColor: Color = Theme.Accents.violet;
     
+    @ObservedObject var appAuth: AppAuthHandler;
     
-    init() {
-        
-    }
+
     
     var body: some View {
         NavigationView {
@@ -30,61 +29,65 @@ struct HomeView: View {
                     .ignoresSafeArea(edges: .top)
                     .frame(height: 400)
                 
-                ScrollView {
-                    VStack {
-                        HomeBigChartView(viewModel: viewModel)
-                            .padding(EdgeInsets(top: 50, leading: 20, bottom: 40, trailing: 20))
-                            .cardBackground()
-                            .padding(15)
-                                
-                        Text("Latest Use")
-                            .font(.title)
-                            .bold()
-                            .padding(.horizontal)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        
-                        HomeLatestSensorsView(viewModel:viewModel)
-                        
-                        Text("Most Happening")
-                            .font(.title)
-                            .bold()
-                            .padding(.horizontal)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            
-                        HomeMostHappeningView(viewModel: viewModel)
-                    }
-                }
-                .onAppear {
-                    Task {
-                        await viewModel.fetchPagedSensors()
-                    }
-                }
-                .navigationTitle("Overview")
-                    
-                .toolbarBackground(navigationColor, for: .navigationBar)
-                .toolbarBackground(.visible, for: .navigationBar)
-                    
-                .toolbar {
-                    ToolbarItem(placement: .primaryAction) {
-                        Button {
-                                
-                        } label: {
-                            Symbols.calendar
-                                .font(
-                                    .system(.headline, design:
-                                            .rounded)
+                if(appAuth.isAuthenticated) {
+                    ScrollView {
+                        VStack {
+                            HomeBigChartView(viewModel: viewModel)
+                                .padding(EdgeInsets(top: 50, leading: 20, bottom: 40, trailing: 20))
+                                .cardBackground()
+                                .padding(15)
+                                    
+                            Text("Latest Use")
+                                .font(.title)
                                 .bold()
-                            )
-                        }
+                                .padding(.horizontal)
+                                .frame(maxWidth: .infinity, alignment: .leading)
                             
+                            HomeLatestSensorsView(viewModel:viewModel)
+                            
+                            Text("Most Happening")
+                                .font(.title)
+                                .bold()
+                                .padding(.horizontal)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                
+                            HomeMostHappeningView(viewModel: viewModel)
+                        }
                     }
+                    .toolbar {
+                        ToolbarItem(placement: .primaryAction) {
+                            Button {
+                                    
+                            } label: {
+                                Symbols.calendar
+                                    .font(
+                                        .system(.headline, design:
+                                                .rounded)
+                                    .bold()
+                                )
+                            }
+                                
+                        }
+                    }
+                    .onAppear {
+                        Task {
+                            await viewModel.fetchPagedSensors()
+                        }
+                    }
+                    
+                } else {
+                    Text("UnAuthenticated")
                 }
             }
+            .navigationTitle("Overview")
+            .toolbarBackground(navigationColor, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+            
         }
     }
 }
 
 #Preview {
-    HomeView()
+    HomeView(appAuth: AppAuthHandler(config: try! ApplicationConfigLoader.load()))
 }
 
