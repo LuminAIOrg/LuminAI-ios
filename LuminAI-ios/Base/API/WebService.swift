@@ -53,7 +53,7 @@ class WebService {
         
         let bearerToken = TokenStorage.shared.getTokens()?.accessToken;
         if(bearerToken == nil) {
-            //self.appAuth?.logout();
+            self.appAuth?.logout();
             Logger.error(data: "Logging out because token is not valid anymore")
             throw NetworkError.unauthorized;
         }
@@ -77,7 +77,7 @@ class WebService {
                     throw error;
                 }
             case 401: // Unauthorized
-                //self.appAuth?.logout();
+                self.appAuth?.logout();
                 Logger.error(data: "Logging out because token is not valid anymore")
                 throw NetworkError.unauthorized
             default:

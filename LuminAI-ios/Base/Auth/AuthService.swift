@@ -10,17 +10,6 @@ import UIKit
 import WebKit
 import SwiftUI
 
-struct AuthConfiguration {
-    static let baseUrl = "https://keycloak.stenz.dev/realms/luminai"
-    static let authUri = "/protocol/openid-connect/auth"
-    static let tokenUri = "login/oauth/access_token"
-    static let endSessionUri = "logout"
-    static let scopes = ["openid"]
-    static let clientId = "luminai-ios"
-    static let clientSecret = "5Ims8N8IzMxAi5Xer3FAfwZCdOi7e5vy"
-    static let redirectUrl = "luminai-ios."
-    static let logoutCallbackUrl = "https://keycloak.stenz.dev/realms/luminai/protocol/openid-connect/logout"
-}
 
 struct Metadata: Codable {
     let authorization_endpoint: String;
@@ -109,9 +98,9 @@ extension WebViewContainer {
         }
 
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-            webViewModel.isLoading = false
             webViewModel.title = webView.title ?? ""
             webViewModel.canGoBack = webView.canGoBack
+            injectCustomStyle(webView)
         }
 
         func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
@@ -145,7 +134,49 @@ extension WebViewContainer {
             }
         }
         
-        
+        func injectCustomStyle(_ webView: WKWebView) {
+            print("injecting style")
+            let customStyle = """
+                #kc-content, #kc-content-wrapper, #kc-form-login, .card-pf {
+                    background-color: transparent !important;
+                }
+                
+                #kc-page-title, #kc-header-wrapper {
+                    display: none !important;
+                }
+                
+                label[for=username], label[for=password] {
+                    font-size: 1rem !important;
+                }
+
+                input#kc-login {
+                    background-color: #FFA564 !important;
+                }
+                button.pf-c-button.pf-m-control, input#username, input#password, input#kc-login, button.pf-c-button.pf-m-control::after  {
+                    --pf-c-form-control--focus--BorderBottomColor: #FFA564 !important;
+                    border-radius: 0.5rem !important;
+                }
+                input#kc-login {
+                    font-size: 1rem !important;
+                }
+                """
+            
+            let style = customStyle.replacingOccurrences(of: "\n", with: "")
+            let script = """
+                document.head.innerHTML += '<style>\(style)</style>'
+                """
+            
+            webView.evaluateJavaScript(script) {(result, error) in
+                if let error = error {
+                    print(error)
+                } else {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100)) {
+                        self.webViewModel.isLoading = false
+                    }
+                   
+                }
+            }
+        }
     }
 }
 

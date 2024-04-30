@@ -9,5 +9,11 @@ import Foundation
 
 
 struct UserInfo: Codable {
-    
+    let userID, username, email: String
+
+    enum CodingKeys: String, CodingKey {
+        case userID = "userId"
+        case username, email
+    }
 }
+

@@ -35,10 +35,10 @@ struct UserView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Symbols.wave
-                    .foregroundColor(navigationColor)
-                    .ignoresSafeArea(edges: .top)
-                    .frame(height: 400)
+//                Symbols.wave
+//                    .foregroundColor(navigationColor)
+//                    .ignoresSafeArea(edges: .top)
+//                    .frame(height: 400)
                 VStack {
                     if(appAuth.isAuthenticated) {
                         VStack {
@@ -52,13 +52,33 @@ struct UserView: View {
                                 appAuth.logout()
                                 
                             }
+                            
                         }.onAppear {
                             viewModel.getUserName()
                         }
                         
                     } else {
                         if(authorizationFlowInitiated) {
-                            WebViewContainer(webViewModel: webViewModel)
+                            ZStack {
+                                // Your WebViewContainer
+                                WebViewContainer(webViewModel: webViewModel)
+                                    .opacity(webViewModel.isLoading ? 0 : 1)
+
+                                // Overlay with progress view
+                                if webViewModel.isLoading {
+                                    Rectangle()
+                                        .fill(Color.white.opacity(1)) // White overlay
+                                        .edgesIgnoringSafeArea(.all)
+                                    
+                                    ProgressView()
+                                        .progressViewStyle(CircularProgressViewStyle())
+                                        .scaleEffect(2) // Adjust scale as needed
+                                }
+                            }
+                           
+                            
+                            
+                        
                         } else {
                             Button("Authenticate") {
                                 Task {
