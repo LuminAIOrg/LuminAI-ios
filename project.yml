@@ -1,0 +1,39 @@
+name: LuminAI
+
+# VERSIONS are needed, build fails, if they are not specified :)
+# https://stackoverflow.com/questions/43111501/the-bundles-info-plist-does-not-contain-a-cfbundleversion-key-or-its-value-is-n
+settings:
+  GENERATE_INFOPLIST_FILE: YES
+  MARKETING_VERSION: 0.0.0
+  CURRENT_PROJECT_VERSION: 0.0.0
+packages:
+  Alamofire:
+    url: https://github.com/Alamofire/Alamofire
+    majorVersion: 5.5.0
+  Starscream:
+    url: https://github.com/daltoniam/Starscream
+    majorVersion: 4.0.8
+targets:
+  LuminAI:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+
+    info:
+        path: ./Info.plist
+        properties:
+            UIColorName:
+                NSAllowsArbitraryLoads: "launch-screen-background"
+            UIImageName: "logo"
+
+    sources:
+      - path: ./core/Features
+      - path: ./core/Configuration
+      - path: ./core/Resources
+      - path: ./core/Base
+
+    dependencies:
+      - package: Alamofire
+      - package: Starscream
+
+  
