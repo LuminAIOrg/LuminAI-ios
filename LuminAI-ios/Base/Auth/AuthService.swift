@@ -302,6 +302,8 @@ class AppAuthHandler: ObservableObject {
     
     func logout() {
         
+    
+        
         DispatchQueue.main.async {
             self.isAuthenticated = false;
             TokenStorage.shared.removeTokens()

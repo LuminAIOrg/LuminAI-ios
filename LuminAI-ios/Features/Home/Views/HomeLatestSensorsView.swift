@@ -38,9 +38,10 @@ struct HomeLatestSensorsView: View {
         ScrollView(.horizontal) {
             HStack(spacing: 16) {
                 if let sensorData = viewModel.latestUse {
-                    ForEach(sensorData) { sensor in
-                        NavigationLink(destination: SensorView(sensor: sensor)) {
-                            SensorCardView(sensorName: "\(sensor.name)", sensorRoom: "Room x", sensorColor: Color(hex: sensor.color ?? "#adadad"))
+                    ForEach(sensorData) { latestUsed in
+                        
+                        NavigationLink(destination: SensorView(sensor: latestUsed.sensor)) {
+                            SensorCardView(sensorName: "\(latestUsed.sensor.name)", sensorRoom: "Room x", sensorColor: Color(hex: latestUsed.sensor.color ?? "#adadad"))
                         }
                     }
                 } else {

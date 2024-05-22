@@ -105,3 +105,18 @@ struct RealmAccess: Codable {
 struct ResourceAccess: Codable {
     let account: RealmAccess
 }
+
+
+// MARK: - LatestUsed
+struct LatestUsedSensor: Codable, Identifiable {
+    let id: Int
+    let userID: String
+    let sensor: Sensor
+    let latestUse: Int
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case userID = "userId"
+        case sensor, latestUse
+    }
+}

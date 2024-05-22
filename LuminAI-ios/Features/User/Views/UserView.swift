@@ -35,10 +35,10 @@ struct UserView: View {
     var body: some View {
         NavigationView {
             ZStack {
-//                Symbols.wave
-//                    .foregroundColor(navigationColor)
-//                    .ignoresSafeArea(edges: .top)
-//                    .frame(height: 400)
+                Symbols.wave
+                    .foregroundColor(navigationColor)
+                    .ignoresSafeArea(edges: .top)
+                    .frame(height: 400)
                 VStack {
                     if(appAuth.isAuthenticated) {
                         VStack {

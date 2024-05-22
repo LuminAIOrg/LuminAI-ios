@@ -12,7 +12,7 @@ class DevicesViewModel: ObservableObject {
     
     init() {
         do {
-            self.sensors = try StaticJSONMapper.decode(file: "MostHappeningDesc", type: LatestUseResponse.self);
+            self.sensors = try StaticJSONMapper.decode(file: "MostHappeningDesc", type: [Sensor].self);
         } catch {
             print("Something went wrong")
         }
@@ -21,9 +21,9 @@ class DevicesViewModel: ObservableObject {
     func changeSort(by sortBy: DevicesSortBy) {
         do {
             if(sortBy == DevicesSortBy.ASC) {
-                self.sensors = try StaticJSONMapper.decode(file: "MostHappeningAsc", type: LatestUseResponse.self);
+                self.sensors = try StaticJSONMapper.decode(file: "MostHappeningAsc", type: [Sensor].self);
             } else if (sortBy == DevicesSortBy.DESC) {
-                self.sensors = try StaticJSONMapper.decode(file: "MostHappeningDesc", type: LatestUseResponse.self);
+                self.sensors = try StaticJSONMapper.decode(file: "MostHappeningDesc", type: [Sensor].self);
             }
         } catch {
             print("Something went wrong")

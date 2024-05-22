@@ -88,6 +88,100 @@ class WebService {
         }
     }
     
+    func postWithToken<T: Codable, R: Codable>(data: T, toURL: String) async throws -> R {
+        guard let url = URL(string: "\(baseUrl)\(toURL)") else { throw NetworkError.badUrl }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let bearerToken = TokenStorage.shared.getTokens()?.accessToken;
+        if(bearerToken == nil) {
+            self.appAuth?.logout();
+            Logger.error(data: "Logging out because token is not valid anymore")
+            throw NetworkError.unauthorized;
+        }
+        
+        let tokenString = "Bearer \(bearerToken!)"
+        request.setValue(tokenString, forHTTPHeaderField: "Authorization") // Set bearer token
+        
+        do {
+            let jsonData = try JSONEncoder().encode(data)
+            request.httpBody = jsonData
+            
+            let (responseData, response) = try await URLSession.shared.data(for: request)
+            guard let httpResponse = response as? HTTPURLResponse else { throw NetworkError.badResponse }
+            guard httpResponse.statusCode >= 200 && httpResponse.statusCode < 300 else { throw NetworkError.badStatus }
+            
+            switch httpResponse.statusCode {
+            case 200..<300:
+                do {
+                    let decodedResponse = try JSONDecoder().decode(R.self, from: responseData)
+                    return decodedResponse
+                } catch {
+                    if(R.self == String.self) {
+                        return String(decoding: responseData, as: UTF8.self) as! R;
+                    }
+                    throw error;
+                }
+            case 401: // Unauthorized
+                self.appAuth?.logout();
+                Logger.error(data: "Logging out because token is not valid anymore")
+                throw NetworkError.unauthorized
+            default:
+                throw NetworkError.badStatus
+            }
+        } catch {
+            throw NetworkError.requestFailed
+        }
+    }
+    
+    func postWithTokenWithoutData<R: Codable>(toURL: String) async throws -> R {
+        guard let url = URL(string: "\(baseUrl)\(toURL)") else { throw NetworkError.badUrl }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let bearerToken = TokenStorage.shared.getTokens()?.accessToken;
+        if(bearerToken == nil) {
+            self.appAuth?.logout();
+            Logger.error(data: "Logging out because token is not valid anymore")
+            throw NetworkError.unauthorized;
+        }
+        
+        let tokenString = "Bearer \(bearerToken!)"
+        request.setValue(tokenString, forHTTPHeaderField: "Authorization") // Set bearer token
+        
+        do {
+            let (data, response) = try await URLSession.shared.data(for: request)
+            guard let httpResponse = response as? HTTPURLResponse else { throw NetworkError.badResponse }
+            print(httpResponse.statusCode)
+            guard httpResponse.statusCode >= 200 && httpResponse.statusCode < 300 else { throw NetworkError.badStatus }
+            
+            switch httpResponse.statusCode {
+            case 200..<300:
+                do {
+                    let decodedResponse = try JSONDecoder().decode(R.self, from: data)
+                    return decodedResponse
+                } catch {
+                    if(R.self == String.self) {
+                        return String(decoding: data, as: UTF8.self) as! R;
+                    }
+                    throw error;
+                }
+            case 401: // Unauthorized
+                self.appAuth?.logout();
+                Logger.error(data: "Logging out because token is not valid anymore")
+                throw NetworkError.unauthorized
+            default:
+                throw NetworkError.badStatus
+            }
+        } catch {
+            throw NetworkError.requestFailed
+        }
+    }
+    
     func post<T: Codable, R: Codable>(data: T, toURL url: String) async throws -> R {
         guard let url = URL(string: "\(baseUrl)\(url)") else { throw NetworkError.badUrl }
         

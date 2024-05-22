@@ -10,12 +10,12 @@ import Charts
 
 struct SensorView: View {
     
-    var sensor: Sensor;
-    
     var navigationColor: Color = Theme.Accents.red;
     
+    @ObservedObject var viewModel = SensorViewModel()
+    
     init(sensor: Sensor) {
-        self.sensor = sensor
+        viewModel.sensor = sensor;
     }
     
     var body: some View {
@@ -26,16 +26,19 @@ struct SensorView: View {
                     .ignoresSafeArea(edges: .top)
                     .frame(height: 600)
                 VStack {
-                    Chart(sensor.data) {
+                    Chart(viewModel.sensor!.data) {
                         LineMark(x: .value("Timestamp", Date(timeIntervalSince1970: Double($0.timestamp))), y: .value("Value", $0.value))
                             .interpolationMethod(.monotone)
                     }
                     .frame(height: 200)
                     .padding(15)
                 }
+                .onAppear {
+                    viewModel.clicked()
+                }
             }
         }
-        .navigationTitle(sensor.name)
+        .navigationTitle(viewModel.sensor!.name)
         .toolbarBackground(navigationColor, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
     }

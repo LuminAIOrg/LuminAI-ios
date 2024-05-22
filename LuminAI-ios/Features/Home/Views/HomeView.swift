@@ -36,6 +36,7 @@ struct HomeView: View {
                                 .padding(EdgeInsets(top: 50, leading: 20, bottom: 40, trailing: 20))
                                 .cardBackground()
                                 .padding(15)
+                        
                                     
                             Text("Latest Use")
                                 .font(.title)
@@ -72,6 +73,13 @@ struct HomeView: View {
                     .onAppear {
                         Task {
                             await viewModel.fetchPagedSensors()
+                            
+                            
+                            let latestUsedSensors: LatestUsedSensorsResponse =  try await viewModel.fetchLatestUsedSensors();
+                            
+                            DispatchQueue.main.async {
+                                viewModel.latestUse = latestUsedSensors;
+                            }
                         }
                     }
                     

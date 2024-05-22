@@ -57,16 +57,21 @@ struct LuminAI_iosApp: App {
         WindowGroup {
             NavigationView{
                 TabView {
-                    HomeView(appAuth: appauth)
-                        .tabItem {
-                            Symbols.homePageIcon
-                            Text("Home")
-                        }
-                    DevicesView(appAuth: appauth)
-                        .tabItem {
-                            Symbols.devicesPageIconActive
-                            Text("Devices")
-                        }
+                    if(self.appauth.isAuthenticated) {
+                        HomeView(appAuth: appauth)
+                            .tabItem {
+                                Symbols.homePageIcon
+                                Text("Home")
+                            }.tag("Home")
+                        DevicesView(appAuth: appauth)
+                            .tabItem {
+                                Symbols.devicesPageIconActive
+                                Text("Devices")
+                            }.tag("Devices")
+                    }
+                    
+                    
+                    
                     UserView(viewModel: userViewModel, webViewModel: WebViewModel(url: "http://localhost:8080", appAuth: self.appauth), appAuth: appauth)
                         .onAppear {
                             print("hello")
@@ -74,8 +79,7 @@ struct LuminAI_iosApp: App {
                         .tabItem {
                             Symbols.profilePageIcon
                             Text("Profile")
-                        }
-                        
+                        }.tag("Profile")
                 }
             }
         }

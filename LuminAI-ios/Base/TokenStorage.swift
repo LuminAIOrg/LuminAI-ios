@@ -18,6 +18,7 @@ class TokenStorage {
     private let keychain = KeychainSwift()
     
     private let storageKey = "at.htl-leonding.LuminAI-ios.tokens"
+    
     private init() {
         
     }
@@ -30,8 +31,10 @@ class TokenStorage {
      * Try to load token data from storage on application startup
      */
     func loadTokens() {
-        let data = keychain.get(self.storageKey)!.data(using: .utf8);
-        self.tokenData = try? JSONDecoder().decode(TokenData.self, from: data!)
+        if let rawData = keychain.get(self.storageKey) {
+            let data = rawData.data(using: .utf8);
+            self.tokenData = try? JSONDecoder().decode(TokenData.self, from: data!)
+        }
     }
 
     /*
