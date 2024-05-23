@@ -70,18 +70,6 @@ struct HomeView: View {
                                 
                         }
                     }
-                    .onAppear {
-                        Task {
-                            await viewModel.fetchPagedSensors()
-                            
-                            
-                            let latestUsedSensors: LatestUsedSensorsResponse =  try await viewModel.fetchLatestUsedSensors();
-                            
-                            DispatchQueue.main.async {
-                                viewModel.latestUse = latestUsedSensors;
-                            }
-                        }
-                    }
                     
                 } else {
                     Text("UnAuthenticated")

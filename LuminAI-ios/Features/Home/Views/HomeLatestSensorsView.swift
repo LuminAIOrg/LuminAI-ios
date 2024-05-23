@@ -40,7 +40,7 @@ struct HomeLatestSensorsView: View {
                 if let sensorData = viewModel.latestUse {
                     ForEach(sensorData) { latestUsed in
                         
-                        NavigationLink(destination: SensorView(sensor: latestUsed.sensor)) {
+                        NavigationLink(destination: SensorView(sensorId: latestUsed.sensor.id, sensorNameTemp: latestUsed.sensor.name)) {
                             SensorCardView(sensorName: "\(latestUsed.sensor.name)", sensorRoom: "Room x", sensorColor: Color(hex: latestUsed.sensor.color ?? "#adadad"))
                         }
                     }

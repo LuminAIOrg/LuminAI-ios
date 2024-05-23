@@ -11,14 +11,17 @@ class SensorViewModel: ObservableObject {
     
     @Published var sensor: Sensor?;
     
-    func clicked() {
+    func clicked(sensorId: Int) {
         Task {
             do {
-                if let sensorId = sensor?.id {
-                    let sensor: LatestUsedSensor = try await WebService.shared.postWithTokenWithoutData(toURL: "/api/latest-use/use/\(sensorId)");
+               
+                let latestUsedSensor: LatestUsedSensor = try await WebService.shared.postWithTokenWithoutData(toURL: "/api/latest-use/use/\(sensorId)");
                     
-                    print("Received Sensor:")
-                    print(sensor)
+                print("Received Sensor:")
+                print(latestUsedSensor)
+                    
+                DispatchQueue.main.async {
+                    self.sensor = latestUsedSensor.sensor
                 }
                 
                 

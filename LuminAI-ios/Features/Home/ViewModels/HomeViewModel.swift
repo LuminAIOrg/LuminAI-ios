@@ -21,6 +21,18 @@ class HomeViewModel: ObservableObject {
         } catch {
             print("Something went wrong reading static data")
         }
+        
+        Task {
+            await self.fetchPagedSensors()
+            
+            let latestUsedSensors: LatestUsedSensorsResponse =  try await self.fetchLatestUsedSensors();
+            // let mostHappeningSensors: [Sensor] = try await self.fetchMostHappening(sortBy: .DESC)
+            
+            DispatchQueue.main.async {
+                self.latestUse = latestUsedSensors;
+                // self.mostHappening = mostHappeningSensors;
+            }
+        }
     }
     
     func fetchPagedSensors() async {
@@ -35,6 +47,10 @@ class HomeViewModel: ObservableObject {
     
     func fetchLatestUsedSensors() async throws -> LatestUsedSensorsResponse {
         return try await WebService.shared.fetchWithToken(fromURL: "/api/latest-use");
+    }
+    
+    func fetchMostHappening(sortBy: SortBy) async throws -> [Sensor] {
+        return try await WebService.shared.fetchWithToken(fromURL: "/api/most-happening/\(sortBy)")
     }
     
     func changeMostHappeningSort(sorting: SortBy) {

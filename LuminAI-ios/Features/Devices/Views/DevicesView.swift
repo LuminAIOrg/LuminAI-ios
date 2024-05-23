@@ -42,7 +42,7 @@ struct DevicesView: View {
                         ScrollView {
                             if let data = viewModel.sensors {
                                 ForEach(data) { sensor in
-                                    NavigationLink(destination: SensorView(sensor: sensor)) {
+                                    NavigationLink(destination: SensorView(sensorId: sensor.id, sensorNameTemp: sensor.name)) {
                                         SensorCardStretchedView(sensor: sensor)
                                             .padding(EdgeInsets(top: 4, leading: 15, bottom: 6, trailing: 15))
                                     }

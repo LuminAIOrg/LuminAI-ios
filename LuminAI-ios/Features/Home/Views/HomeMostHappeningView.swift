@@ -20,19 +20,19 @@ struct HomeMostHappeningView: View {
     
     var body: some View {
         VStack {
+            Picker("Hello world", selection: Binding(get: {
+                return sortOption
+            }, set: {
+                viewModel.changeMostHappeningSort(sorting: $0)
+                sortOption = $0
+            })) {
+                ForEach(SortBy.allCases) {
+                    Text("\($0.title)").tag($0)
+                }
+            }.pickerStyle(.segmented)
             if viewModel.mostHappening != nil {
-                Picker("Hello world", selection: Binding(get: {
-                    return sortOption
-                }, set: {
-                    viewModel.changeMostHappeningSort(sorting: $0)
-                    sortOption = $0
-                })) {
-                    ForEach(SortBy.allCases) {
-                        Text("\($0.title)").tag($0)
-                    }
-                }.pickerStyle(.segmented)
                 ForEach(viewModel.mostHappening!) { sensor in
-                    NavigationLink(destination: SensorView(sensor: sensor)) {
+                    NavigationLink(destination: SensorView(sensorId: sensor.id, sensorNameTemp: sensor.name)) {
                         SensorCardStretchedView(sensor: sensor)
                     }
                 }
