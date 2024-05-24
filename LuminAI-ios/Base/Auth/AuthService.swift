@@ -145,19 +145,22 @@ extension WebViewContainer {
                     display: none !important;
                 }
                 
-                label[for=username], label[for=password] {
+                label[for=username], label[for=password], label[for=password-confirm], label[for=email], label[for=firstName], label[for=lastName] {
                     font-size: 1rem !important;
                 }
 
-                input#kc-login {
+                input#kc-login, #kc-form-buttons > input {
                     background-color: #FFA564 !important;
+                    font-size: 1rem !important;
                 }
-                button.pf-c-button.pf-m-control, input#username, input#password, input#kc-login, button.pf-c-button.pf-m-control::after  {
+                button.pf-c-button.pf-m-control, input#username, input#password, input#password-confirm, input#email, input#firstName, input#lastName, input#kc-login, button.pf-c-button.pf-m-control::after, #kc-form-buttons > input  {
                     --pf-c-form-control--focus--BorderBottomColor: #FFA564 !important;
+                    
                     border-radius: 0.5rem !important;
                 }
-                input#kc-login {
-                    font-size: 1rem !important;
+                
+                .pf-c-button.pf-m-control:hover {
+                    --pf-c-button--m-control--after--BorderBottomColor: #FFA564 !important;
                 }
                 """
             
