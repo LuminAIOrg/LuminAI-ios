@@ -19,16 +19,18 @@ struct HomeView: View {
     
     @ObservedObject var appAuth: AppAuthHandler;
     
+    @EnvironmentObject var rotationManager: RotationManager
 
     
     var body: some View {
         NavigationView {
             ZStack {
-                Symbols.wave
-                    .foregroundColor(navigationColor)
-                    .ignoresSafeArea(edges: .top)
-                    .frame(height: 400)
-                
+                if( UIDevice.isIPhone ) {
+                    Symbols.wave
+                        .foregroundColor(navigationColor)
+                        .ignoresSafeArea(edges: .top)
+                        .frame(height: 400)
+                }
                 if(appAuth.isAuthenticated) {
                     ScrollView {
                         VStack {
@@ -45,6 +47,14 @@ struct HomeView: View {
                                 .frame(maxWidth: .infinity, alignment: .leading)
                             
                             HomeLatestSensorsView(viewModel:viewModel)
+                                .onAppear {
+                                    Task {
+                                        let latestUsedSensors: LatestUsedSensorsResponse =  try await viewModel.fetchLatestUsedSensors();
+                                        DispatchQueue.main.async {
+                                            viewModel.latestUse = latestUsedSensors;
+                                        }
+                                    }
+                                }
                             
                             Text("Most Happening")
                                 .font(.title)

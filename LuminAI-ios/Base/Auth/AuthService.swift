@@ -256,7 +256,7 @@ class AppAuthHandler: ObservableObject {
     func introspectToken() async throws {
         let metadata = try await fetchMetadata();
         
-        guard let url = URL(string: "\(metadata.introspection_endpoint ?? "")") else { throw NetworkError.badUrl }
+        guard let url = URL(string: "\(metadata.introspection_endpoint)") else { throw NetworkError.badUrl }
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"

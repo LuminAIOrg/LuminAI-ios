@@ -10,6 +10,7 @@ import Foundation
 class SensorViewModel: ObservableObject {
     
     @Published var sensor: Sensor?;
+    @Published var scrollPosition: Int = 0;
     
     func clicked(sensorId: Int) {
         Task {
@@ -22,6 +23,7 @@ class SensorViewModel: ObservableObject {
                     
                 DispatchQueue.main.async {
                     self.sensor = latestUsedSensor.sensor
+                    self.scrollPosition = latestUsedSensor.sensor.data.first?.timestamp ?? 0
                 }
                 
                 

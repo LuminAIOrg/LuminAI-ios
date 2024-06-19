@@ -20,10 +20,12 @@ struct DevicesView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Symbols.wave
-                    .foregroundColor(navigationColor)
-                    .ignoresSafeArea(edges: .top)
-                    .frame(height: 400)
+                if( UIDevice.isIPhone) {
+                    Symbols.wave
+                        .foregroundColor(navigationColor)
+                        .ignoresSafeArea(edges: .top)
+                        .frame(height: 400)
+                }
                 if(appAuth.isAuthenticated) {
                     VStack {
                         Picker("Select", selection: Binding(get: {

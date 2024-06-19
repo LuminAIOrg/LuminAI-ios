@@ -11,6 +11,18 @@ import SwiftUI
 import UIKit
 
 
+class RotationManager: ObservableObject {
+    @Published var allowsRotation: Bool = false
+}
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    var rotationManager = RotationManager()
+
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return rotationManager.allowsRotation ? .all : .portrait
+    }
+}
+
 @main
 struct LuminAI_iosApp: App {
     private let config: ApplicationConfig
@@ -18,6 +30,9 @@ struct LuminAI_iosApp: App {
     private let appauth: AppAuthHandler
     private let userViewModel: UserViewModel
     
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    @State private var selectedIndex = 0
     
     func onLoggedIn() {
         appauth.isAuthenticated = true
@@ -55,7 +70,7 @@ struct LuminAI_iosApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView{
+            NavigationStack {
                 TabView {
                     if(self.appauth.isAuthenticated) {
                         HomeView(appAuth: appauth)
@@ -69,9 +84,9 @@ struct LuminAI_iosApp: App {
                                 Text("Devices")
                             }.tag("Devices")
                     }
-                    
-                    
-                    
+
+
+
                     UserView(viewModel: userViewModel, webViewModel: WebViewModel(url: "http://localhost:8080", appAuth: self.appauth), appAuth: appauth)
                         .onAppear {
                             print("hello")
@@ -81,7 +96,18 @@ struct LuminAI_iosApp: App {
                             Text("Profile")
                         }.tag("Profile")
                 }
-            }
+            }.environmentObject(appDelegate.rotationManager)
+                .navigationViewStyle(StackNavigationViewStyle())
         }
+    }
+}
+
+extension UIDevice {
+    static var isIPad: Bool {
+        UIDevice.current.userInterfaceIdiom == .pad
+    }
+    
+    static var isIPhone: Bool {
+        UIDevice.current.userInterfaceIdiom == .phone
     }
 }

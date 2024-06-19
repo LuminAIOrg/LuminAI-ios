@@ -24,4 +24,6 @@ enum Symbols {
     static let calendar = Image(systemName: "calendar")
     
     static let wave = Image("Wave");
+    
+    static let waveHorizontal = Image("WaveHorizontal")
 }
